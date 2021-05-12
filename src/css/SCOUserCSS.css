@@ -1,0 +1,48 @@
+/* SCO Client CSS, Jake Deery on behalf of City College Plymouth, 2021 */
+
+/* hide unncesessary stuff */
+.navbar-inverse {
+	display: none
+}
+
+#opaccredits {
+	display: none
+}
+
+/* nav tabs */
+.nav.nav-tabs {
+	border-bottom: 1px solid #a59e96
+}
+
+.nav.nav-tabs li a,
+.nav.nav-tabs li.active a {
+	border: 1px solid #a59e96;
+	border-bottom-color: #fff;
+	text-decoration: none
+}
+
+.nav.nav-tabs li a {
+	border-bottom-color: transparent
+}
+
+.nav.nav-tabs li a:hover,
+.nav.nav-tabs li a:focus
+ {
+	background-color: #f3f2f1
+}
+
+.nav.nav-tabs li.active a {
+	background-color: #f3f2f1
+}
+
+/* pc-only rules */
+@media(min-width: 992px) {
+	#opacheader {
+		height: 32rem
+	}
+
+	#opacheader h1 {
+		padding: 13.2rem 15rem;
+		font-size: 4rem
+	}
+}

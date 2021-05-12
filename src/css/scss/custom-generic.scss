@@ -1,0 +1,280 @@
+// custom-generic.scss, OPACUserCSS, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// generic
+
+html {
+	font-size: 16px
+}
+
+body {
+	color: $black;
+	background-color: $msCloudy
+}
+
+body::after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+	content: url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-cloudy-logo.png') url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-white-logo.png')
+}
+
+//
+// generic content
+p {
+	padding: 0 0 .75em;
+	margin: 0;
+	color: $black
+}
+
+h1, h2, h3,
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6 {
+	color: $black
+}
+
+a {
+	color: $msGreen;
+	text-decoration: underline;
+
+	&:link, &:visited {
+		color: $msGreen;
+		text-decoration: underline
+	}
+
+	&:hover, &:focus,
+	&:active, &.active {
+		color: darken($msGreen, 33%);
+		text-decoration: none
+	}
+}
+
+hr {
+	border-top: 1px solid darken($msCloudy, 33%)
+}
+
+//
+// specify page fonts
+.fonts-loaded body, .fonts-loaded button,
+.fonts-loaded input, .fonts-loaded optgroup,
+.fonts-loaded option, .fonts-loaded select,
+.fonts-loaded textarea {
+	font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+
+	body, button, input,
+	optgroup, option, select,
+	textarea {
+		font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif
+	}
+}
+
+//
+// main content
+#wrap {
+	width: 100%;
+	margin: auto;
+	padding: 0;
+	overflow-x: hidden
+}
+
+.container-fluid {
+	width: 100%;
+	margin: auto;
+	padding: 0
+}
+
+//
+// buttons
+.btn, input[type="submit"].btn {
+	background-image: none;
+	text-shadow: none;
+	text-decoration: none!important;
+
+	padding: .45rem 1.125rem;
+	font-size: 1rem;
+	border: 1px solid transparent;
+	border-radius: .33rem;
+	cursor: pointer;
+	white-space: normal;
+	word-wrap: break-word;
+	font-weight: 400;
+	box-shadow: 0 0 0 1px transparent;
+
+	color: $black!important;
+	background-color: $msCloudy!important;
+	border: 1px solid darken($msCloudy, 33%)!important;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-image: none;
+		text-shadow: none;
+		text-decoration: none!important;
+
+		color: $white!important;
+		background-color: $msCharcoal!important;
+		border: 1px solid lighten($msCharcoal, 33%)!important;
+		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)!important
+	}
+}
+
+.btn-primary, #loginModal input[type="submit"],
+.btn-primary:not(:disabled):not(.disabled),
+.btn-success, .btn-success:not(:disabled):not(.disabled) {
+	background-image: none;
+	text-shadow: none;
+	text-decoration: none!important;
+
+	color: $ccpText3!important;
+	background-color: $ccpHue3!important;
+	border: 1px solid $ccpText3!important;
+	
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-image: none;
+		text-shadow: none;
+		text-decoration: none!important;
+
+		color: $white!important;
+		background-color: darken($ccpHue3, 33%)!important;
+		border: 1px solid darken($ccpHue3, 11%)!important;
+		box-shadow: 0 0 0 1px $ccpHue3!important
+	}
+}
+
+.btn-default, .btn-secondary,
+.btn-default:not(:disabled):not(.disabled), 
+.btn-secondary:not(:disabled):not(.disabled),
+#searchsubmit.btn.btn-primary {
+	background-image: none;
+	text-shadow: none;
+	text-decoration: none!important;
+
+	color: $black;
+	background-color: $msCloudy;
+	border: 1px solid darken($msCloudy, 33%);
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-image: none;
+		text-shadow: none;
+		text-decoration: none!important;
+
+		color: $white!important;
+		background-color: $msCharcoal!important;
+		border: 1px solid lighten($msCharcoal, 33%)!important;
+		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)!important
+	}
+}
+
+.btn-link,
+.btn-link:not(:disabled):not(.disabled) {
+	background-image: none;
+	text-shadow: none;
+	text-decoration: none!important;
+
+	color: inherit!important;
+	background-color: transparent!important;
+	border: 1px solid transparent!important;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-image: none;
+		text-shadow: none;
+		text-decoration: none!important;
+
+		color: inherit!important;
+		background-color: transparent!important;
+		border: 1px solid transparent!important;
+		box-shadow: 0 0 0 1px transparent!important
+	}
+}
+
+.btn-danger,
+.btn-danger:not(:disabled):not(.disabled) {
+	background-image: none;
+	text-shadow: none;
+	text-decoration: none!important;
+
+	color: $ccpText2!important;
+	background-color: $ccpHue2!important;
+	border: 1px solid $ccpText2!important;
+	
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-image: none;
+		text-shadow: none;
+		text-decoration: none!important;
+
+		color: $white!important;
+		background-color: darken($ccpHue2, 33%)!important;
+		border: 1px solid darken($ccpHue2, 11%)!important;
+		box-shadow: 0 0 0 1px $ccpHue2!important
+	}
+}
+
+.input-append .add-on:last-child, .input-append .btn:last-child,
+.input-append .btn-group:last-child > .dropdown-toggle {
+	border-radius: .33rem
+}
+
+.dropdown-menu > li > a {
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $ccpHue1!important;
+		color: $ccpText1!important
+	}
+}
+
+.show {
+	.btn-primary.dropdown-toggle {
+		background-image: none;
+		background-color: $ccpHue3;
+		border-color: $ccpHue3;
+		box-shadow: 0 0 0 1px $ccpHue3
+	}
+}
+
+//
+// input fields
+input[type="text"], input[type="password"],
+input[type="email"], input[type="url"],
+input[type="time"], input[type="date"],
+input[type="datetime-local"], input[type="tel"],
+input[type="number"], input[type="search-md"],
+input[type="search"], select, textarea,
+.form-control {
+	padding: 0.375rem 0.75rem;
+	outline: none;
+	font-weight: 300;
+	font-size: 1.1rem;
+	height: auto;
+	line-height: normal;
+	background-image: none;
+	text-shadow: none;
+	border: 1px solid darken($msCloudy, 33%);
+	box-shadow: none;
+	border-radius: .33rem;
+
+	&:hover, &:active,
+	&.active {
+		background-image: none;
+		text-shadow: none;
+		
+		border: 1px solid $msCloudy, 66%;
+		box-shadow: 0 0 0 1px darken($ccpHue3, 33%)
+	}
+
+	&:focus {
+		background-image: none;
+		text-shadow: none;
+		
+		border: 1px solid $ccpHue3;
+		box-shadow: 0 0 0 1px lighten($ccpHue3, 33%)
+	}
+}

@@ -1,0 +1,199 @@
+// custom-opac.scss, OPACUserCSS, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// opac overrides
+#login {
+	display: none
+}
+
+.search_history {
+	display: none
+}
+
+//
+//
+// account page
+.selections-toolbar.toolbar {
+	background: transparent
+}
+
+//
+//
+// search results
+#numresults, #selections {
+	color: $black
+}
+
+//
+// search facets
+#facetcontainer {
+	overflow: hidden;
+	border: 1px solid darken($msCloudy, 33%);
+	border-radius: .33rem
+}
+
+#menu, #search-facets {
+	margin: 0;
+	border: none
+}
+
+#menu h2, #search-facets h2 {
+	margin: 0;
+
+	a {
+		background-color: $msCloudy;
+		color: $black;
+		border-bottom: 1px solid darken($msCloudy, 33%)
+	}
+}
+
+//
+// bookbag form
+#bookbag_form {
+	border-bottom: 1px solid darken($msCloudy, 33%)
+}
+
+//
+// floating toolbar
+#floating {
+	overflow: hidden;
+	border: 1px solid darken($msCloudy, 33%);
+	border-radius: .33rem
+}
+
+#toolbar.toolbar,
+#toolbar.toolbar.clearfix {
+	background: $msCloudy;
+	border: 1px solid transparent;
+	border-bottom: 1px solid darken($msCloudy, 33%)
+}
+
+#selections-toolbar,
+.selections-toolbar {
+	background: $white;
+	border: 1px solid transparent
+}
+
+// underlined links
+#CheckAll, #CheckNone,
+.CheckAll, .CheckNone,
+#menu a, #search-facets a {
+	text-decoration: underline;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		text-decoration: none
+	}
+}
+
+//
+// results text of importance
+.results_summary.availability,
+.results_summary.online_resources {
+	font-weight: bold;
+
+	.label {
+		font-weight: bold
+	}
+
+	a {
+		font-weight: bold
+	}
+}
+
+//
+// suggestions box
+.suggestion {
+	background-color: $msCloudy;
+	color: $black;
+	border: 1px solid transparent;
+	border-radius: .33rem
+}
+
+//
+//
+// details page
+#action, .actions,
+.toolbar, .view{
+	color: $black;
+
+	i.fa {
+		color: $black
+	}
+
+	a {
+		color: $msGreen;
+
+		i.fa {
+			color: $msGreen
+		}
+
+		&:hover, &:focus {
+			color: darken($msGreen, 33%);
+			
+			i.fa {
+			color: darken($msGreen, 33%)
+			}
+		}
+	}
+}
+
+#action {
+	background-color: $msCloudy;
+	border-color: transparent;
+	border-radius: .33rem
+}
+
+//
+// views
+#views {
+	border-bottom: 1px solid darken($msCloudy, 33%)
+}
+
+.view {
+	color: $black;
+
+	border-top: 1px solid darken($msCloudy, 33%);
+	border-right: 1px solid darken($msCloudy, 33%);
+	border-bottom: none;
+	border-left: 1px solid darken($msCloudy, 33%);
+	border-radius: .33rem .33rem 0 0
+}
+
+.current-view {
+	background-color: $white
+}
+
+//
+// socials
+#social_networks {
+	a {
+		border-radius: .33rem;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			border-color: darken($msCloudy, 33%)
+		}
+	}
+}
+
+//
+// view tabs
+a#Normalview, a#MARCview,
+a#ISBDview {
+	text-decoration: underline!important;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		text-decoration: none!important;
+	}
+}
+
+//
+//
+// course search
+.dataTables_filter input,
+.dataTables_filter label {
+	font-size: 1rem
+}

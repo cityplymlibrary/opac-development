@@ -1,0 +1,164 @@
+// custom-page.scss, OPACUserCSS, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// main block
+
+//
+// main area
+.main {
+	margin: 0;
+	padding: 1rem;
+	background-color: $white
+}
+
+//
+// breadcrumbs
+.breadcrumb {
+	margin: .5rem 0 .9375rem;
+	background-color: $msCloudy;
+	border: 1px solid transparent;
+	border-radius: .33rem
+}
+
+.breadcrumb > li {
+	text-shadow: none
+}
+
+//
+// ui tabs
+.ui-tabs .ui-tabs-nav li {
+	background: $msCloudy;
+	border-color: darken($msCloudy, 33%);
+	border-radius: .33rem .33rem 0 0;
+
+	&.ui-tabs-active {
+		border-color: darken($msCloudy, 33%);
+		border-radius: .33rem .33rem 0 0
+	}
+}
+
+.ui-tabs .ui-tabs-panel {
+	border-color: darken($msCloudy, 33%);
+	border-radius: .33rem
+}
+
+.ui-widget-content, .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	a {
+		color: $black
+	}
+}
+
+.ui-widget-content, .ui-tabs .ui-state-default {
+	a, a:link,
+	a:visited {
+		color: $msGreen
+	}
+}
+
+//
+// tables
+.table {
+	overflow: hidden;
+	border-radius: .33rem
+}
+
+th, td {
+	background-color: $msCloudy
+}
+
+.table-bordered {
+	border: 1px solid darken($msCloudy, 33%);
+	border-left: none
+}
+
+.table-bordered th, .table-bordered td {
+	border-left: 1px solid darken($msCloudy, 33%)
+}
+
+.table th, .table td {
+	border-top: 1px solid darken($msCloudy, 33%)
+}
+
+.table .sorting {
+	background: url('/opac-tmpl/bootstrap/images/ascdesc.gif') no-repeat scroll 100% 75% $msCloudy
+}
+
+.table .sorting_asc {
+	background: url('/opac-tmpl/bootstrap/images/asc.gif') no-repeat scroll 100% 80% $msCloudy
+}
+
+.table .sorting_desc {
+	background: url('/opac-tmpl/bootstrap/images/desc.gif') no-repeat scroll 100% 80% $msCloudy
+}
+
+.table .nosort, .table .nosort.sorting,
+.table .nosort.sorting_asc, .table .nosort.sorting_desc {
+	background-color: $msCloudy
+}
+
+.table-striped tbody > tr:nth-child(2n+1) > td,
+.table-striped tbody > tr:nth-child(2n+1) > th {
+	background-color: $white
+}
+
+.table-striped tbody > tr:nth-child(2n+1) > td,
+.table-striped tbody > tr:nth-child(2n+1) > th {
+	background-color: $white
+}
+
+//
+// items tables
+#items, #items td,
+#items th {
+	font-size: 1rem
+}
+
+//
+// menus
+.menu-collapse {
+	border-right: 1px solid darken($msCloudy, 33%)
+}
+
+#menu li a {
+	background-color: $msCloudy;
+	border-radius: .33rem 0 0 .33rem;
+	border: 1px solid darken($msCloudy, 33%);
+	border-right: 1px solid transparent;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $msGreen;
+		color: $white
+	}
+}
+
+#menu li.active a {
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $msGreen;
+		color: $white
+	}
+}
+
+//
+// recolour things
+legend, .legend {
+	color: $black;
+	border-bottom: none
+}
+
+legend:after, .legend:after {
+	content: "";
+	display: block;
+	border-bottom: .25rem solid darken($msCloudy, 33%);
+	border-radius: .33rem
+}
+
+.results_summary {
+	color: $black
+}
+
+caption, h5 {
+	color: $black
+}

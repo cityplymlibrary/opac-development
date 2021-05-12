@@ -1,0 +1,826 @@
+// ccp-spa-page.scss, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// page area
+#-ccp-page-region {
+	margin: 0;
+	padding: 0;
+	box-shadow: none
+}
+
+.-ccp-container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+			
+	.-ccp-inner-lg {
+		padding: 5rem 1rem
+	}
+			
+	.-ccp-inner-md {
+		padding: 3rem 1rem
+	}
+			
+	.-ccp-inner-sm {
+		padding: 1rem 1rem
+	}
+}
+
+.-ccp-transparent-section {
+	background-color: transparent;
+
+	.-ccp-light {
+		p, span, div, pre, code, strong, em, li {
+			color: $black
+		}
+			
+		a {
+			color: $black;
+
+			&:visited {
+				color: $black
+			}
+
+			&:hover, &:focus,
+			&:active, &.active {
+				color: lighten($msCharcoal, 33%)
+			}
+		}
+			
+		h1, h2, h3,
+		h4, h5, h6,
+		.h1, .h2, .h3,
+		.h4, .h5, .h6 {
+			color: $black
+		}
+	}
+
+	.-ccp-dark {
+		p, span, div, pre, code, strong, em, li {
+			color: $white
+		}
+			
+		a {
+			color: $white;
+
+			&:visited {
+				color: $white
+			}
+
+			&:hover, &:focus,
+			&:active, &.active {
+				color: darken($msCloudy, 33%)
+			}
+		}
+
+		h1, h2, h3,
+		h4, h5, h6,
+		.h1, .h2, .h3,
+		.h4, .h5, .h6 {
+			color: $white
+		}
+	}
+}
+
+.-ccp-white-section {
+	background-color: $white;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $black
+	}
+		
+	a {
+		color: $black;
+
+		&:visited {
+			color: $black
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCharcoal, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $black
+	}
+}
+
+.-ccp-black-section {
+	background-color: $black;
+	
+	p, span, div, pre, code, strong, em, li {
+		color: $white
+	}
+		
+	a {
+		color: $white;
+
+		&:visited {
+			color: $white
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCloudy, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $white
+	}
+}
+
+.-ccp-cloudy-section {
+	background-color: $msCloudy;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $black
+	}
+		
+	a {
+		color: $black;
+
+		&:visited {
+			color: $black
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCharcoal, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $black
+	}
+}
+
+.-ccp-charcoal-section {
+	background-color: $msCharcoal;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $white
+	}
+	
+	a {
+		color: $white;
+
+		&:visited {
+			color: $white
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCloudy, 33%)
+		}
+	}
+	
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $white
+	}
+}
+
+.-ccp-danger-section {
+	background-color: $msRed;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $white
+	}
+		
+	a {
+		color: $white;
+
+		&:visited {
+			color: $white
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCloudy, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $white
+	}
+}
+
+.-ccp-alert-section {
+	background-color: $msGold;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $black
+	}
+		
+	a {
+		color: $black;
+
+		&:visited {
+			color: $black
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCharcoal, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $black
+	}
+}
+
+.-ccp-purple-section {
+	background-color: $ccpHue1;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpText1
+	}
+		
+	a {
+		color: $ccpText1;
+
+		&:visited {
+			color: $ccpText1
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCloudy, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpText1
+	}
+}
+
+.-ccp-purple2-section {
+	background-color: $ccpText1;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpHue1
+	}
+		
+	a {
+		color: $ccpHue1;
+
+		&:visited {
+			color: $ccpHue1
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: lighten($msCharcoal, 33%)
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpHue1
+	}
+}
+
+.-ccp-orange-section {
+	background-color: $ccpHue2;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpText2
+	}
+	
+	a {
+		color: $ccpText2;
+
+		&:visited {
+			color: $ccpText2
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCloudy, 33%)
+		}
+	}
+	
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpText2
+	}
+}
+
+.-ccp-orange2-section {
+	background-color: $ccpText2;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpHue2
+	}
+	
+	a {
+		color: $ccpHue2;
+
+		&:visited {
+			color: $ccpHue2
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: lighten($msCharcoal, 33%)
+		}
+	}
+	
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpHue2
+	}
+}
+
+.-ccp-green-section {
+	background-color: $ccpHue3;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpText3
+	}
+	
+	a {
+		color: $ccpText3;
+
+		&:visited {
+			color: $ccpText3
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msCloudy, 33%)
+		}
+	}
+	
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpText3
+	}
+}
+
+.-ccp-green2-section {
+	background-color: $ccpText3;
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpHue3
+	}
+	
+	a {
+		color: $ccpHue3;
+
+		&:visited {
+			color: $ccpHue3
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: lighten($msCharcoal, 33%)
+		}
+	}
+	
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpHue3
+	}
+}
+
+//
+// credits
+#-ccp-footer-region {
+	border-top: .25rem solid $ccpHue3;
+}
+
+.-ccp-grid-container {
+	display: flex;
+	align-items: stretch;
+	flex-flow: row wrap;
+	height: 100%;
+
+	.-ccp-grid-25 {
+		width: 100%;
+		border-radius: .66rem;
+		margin: 1rem 0;
+		padding: 0
+	}
+
+	.-ccp-grid-33 {
+		width: 100%;
+		border-radius: .66rem;
+		margin: 1rem 0;
+		padding: 0
+	}
+
+	.-ccp-grid-50 {
+		width: 100%;
+		border-radius: .66rem;
+		margin: 1rem 0;
+		padding: 0
+	}
+
+	.-ccp-grid-inner-sm {
+		margin: 1rem
+	}
+
+	.-ccp-grid-inner-md {
+		margin: 1.75rem
+	}
+
+	.-ccp-grid-inner-lg {
+		margin: 3rem
+	}
+
+	@media(min-width: $breakpoint-pc) {
+		.-ccp-grid-25 {
+			margin: 0;
+			width: 25%
+		}
+
+		.-ccp-grid-33 {
+			margin: 0;
+			width: 33.3%
+		}
+
+		.-ccp-grid-50 {
+			margin: 0;
+			width: 50%
+		}
+	}
+}
+
+//
+// offset grids
+@media(min-width: $breakpoint-pc) {
+	.-ccp-offset-grid {
+		padding-bottom: 3rem;
+
+		.-ccp-offset-grid-this {
+			margin-top: 3rem;
+			margin-bottom: -3rem
+		}
+	}
+}
+
+//
+// cards
+.-ccp-card-link { // this has to come before card rules
+	text-decoration: none!important
+}
+
+.-ccp-card-white,
+.-ccp-card-cloudy,
+.-ccp-card-black,
+.-ccp-card-charcoal,
+.-ccp-card-purple,
+.-ccp-card-orange,
+.-ccp-card-green {
+	position: relative;
+	min-height: 100%;
+	margin: .5rem;
+	border-radius: .33rem;
+	cursor: pointer
+}
+
+.-ccp-card-white::after,
+.-ccp-card-cloudy::after,
+.-ccp-card-black::after,
+.-ccp-card-charcoal::after,
+.-ccp-card-purple::after,
+.-ccp-card-orange::after,
+.-ccp-card-green::after {
+	content: "Go \00bb";
+	font-weight: bold;
+	position: absolute;
+	bottom: .5rem;
+	right: .5rem
+}
+
+.-ccp-card-white {
+	background-color: $white;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $msCloudy
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $black
+	}
+		
+	a, .ccp-card-link {
+		color: $black;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msGreen
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $black
+	}
+
+	&::after {
+		color: $black
+	}
+}
+
+.-ccp-card-cloudy {
+	background-color: $msCloudy;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $white
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $black
+	}
+		
+	a, .ccp-card-link {
+		color: $black;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msGreen
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $black
+	}
+
+	&::after {
+		color: $black
+	}
+}
+
+.-ccp-card-black {
+	background-color: $black;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $msCharcoal
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $white
+	}
+		
+	a, .ccp-card-link {
+		color: $white;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msCloudy
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $white
+	}
+
+	&::after {
+		color: $white
+	}
+}
+
+.-ccp-card-charcoal {
+	background-color: $msCharcoal;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $black
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $white
+	}
+		
+	a, .ccp-card-link {
+		color: $white;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msCloudy
+		}
+	}
+		
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $white
+	}
+
+	&::after {
+		color: $white
+	}
+}
+
+.-ccp-card-purple {
+	background-color: $ccpHue1;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: darken($ccpHue1, 33%)
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpText1
+	}
+		
+	a, .ccp-card-link {
+		color: $ccpText1;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msCloudy
+		}
+	}
+
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpText1
+	}
+
+	&::after {
+		color: $ccpText1
+	}
+}
+
+.-ccp-card-orange {
+	background-color: $ccpHue2;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: lighten($ccpHue2, 33%)
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpText2
+	}
+		
+	a, .ccp-card-link {
+		color: $ccpText2;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msCharcoal
+		}
+	}
+
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpText2
+	}
+
+	&::after {
+		color: $ccpText2
+	}
+}
+
+.-ccp-card-green {
+	background-color: $ccpHue3;
+
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: lighten($ccpHue3, 33%)
+	}
+
+	p, span, div, pre, code, strong, em, li {
+		color: $ccpText3
+	}
+		
+	a, .ccp-card-link {
+		color: $ccpText3;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $msCharcoal
+		}
+	}
+
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		color: $ccpText3
+	}
+
+	&::after {
+		color: $ccpText3
+	}
+}
+
+.-ccp-card-white:hover .-ccp-card-header,
+.-ccp-card-white:focus .-ccp-card-header,
+.-ccp-card-cloudy:hover .-ccp-card-header,
+.-ccp-card-cloudy:focus .-ccp-card-header,
+.-ccp-card-black:hover .-ccp-card-header,
+.-ccp-card-black:focus .-ccp-card-header,
+.-ccp-card-charcoal:hover .-ccp-card-header,
+.-ccp-card-charcoal:focus .-ccp-card-header,
+.-ccp-card-purple:hover .-ccp-card-header,
+.-ccp-card-purple:focus .-ccp-card-header,
+.-ccp-card-orange:hover .-ccp-card-header,
+.-ccp-card-orange:focus .-ccp-card-header,
+.-ccp-card-green:hover .-ccp-card-header,
+.-ccp-card-green:focus .-ccp-card-header {
+	text-decoration: none
+}
+
+.-ccp-card-inner {
+	position: relative;
+	padding: .5rem 1rem
+}
+
+.-ccp-card-header {
+	font-size: 1.25rem;
+	text-decoration: underline
+}
+
+//
+// searchform
+.-ccp-searchform-container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%
+}
+
+.-ccp-searchform-inner {
+	width: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	justify-items: stretch;
+	align-items: stretch;
+
+	.-ccp-searchform-input {
+		width: 70%;
+		max-height: 84px;
+		margin: 0;
+		margin-right: 1rem;
+		padding: 1.5rem 2rem
+	}
+	
+	.-ccp-searchform-submit {
+		margin-bottom: 0;
+		width: 30%
+	}
+}
+
+//
+// multi-link lists
+.-ccp-multilink-list {
+	li {
+		padding: 1rem 0 1rem 0
+	}
+}

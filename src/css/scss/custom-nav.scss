@@ -1,0 +1,104 @@
+// custom-nav.scss, OPACUserCSS, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// navbar
+
+//
+// logo
+#logo {
+	display: none;
+	background: transparent url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-cloudy-logo.png') no-repeat left center;
+
+	&:hover, &:focus {
+		background: transparent url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-white-logo.png') no-repeat left center
+	}
+
+	@media(min-width: $breakpoint-pc) {
+		display: initial;
+	}
+}
+
+img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
+	display: none
+}
+
+//
+// navbar
+.navbar-inverse .navbar-inner {
+	background-color: $msCharcoal;
+	padding: .5rem 1rem;
+	border: none
+}
+
+.navbar-inverse .nav {
+	li {
+		a {
+			color: darken($msCloudy, 33%);
+			text-shadow: none;
+
+			i.fa {
+				color: darken($msCloudy, 33%)
+			}
+
+			&:hover, &:focus,
+			&:active, &.active {
+				color: $white;
+
+				i.fa {
+					color: $white
+				}
+			}
+		}
+	}
+
+	// dropdown carets
+	li.dropdown > .dropdown-toggle b.caret {
+		border-top-color: darken($msCloudy, 33%);
+		border-bottom-color: darken($msCloudy, 33%)
+	}
+
+	li.dropdown.open > .dropdown-toggle b.caret,
+	li.dropdown > a:hover b.caret,
+	li.dropdown > a:focus b.caret,
+	li.dropdown > a:active b.caret {
+		border-top-color: $white;
+		border-bottom-color: $white
+	}
+
+	li.dropdown.open > .dropdown-toggle .caret {
+		&:hover, &:focus,
+		&:active &.active {
+			border-top-color: $white;
+			border-bottom-color: $white
+		}
+	}
+
+	// open dropdowns
+	li.dropdown.open > .dropdown-toggle {
+		&:hover, &:focus,
+		&:active &.active {
+			color: $white
+		}
+	}
+}
+
+// members account & logout
+.navbar-inverse .navbar-inner #members ul.dropdown-menu a {
+	color: $msGreen;
+	
+	&:hover, &:focus {
+		color: darken($msGreen, 33%);
+		text-decoration: none
+	}
+}
+
+.navbar-inverse .navbar-inner #members ul.dropdown-menu a.logout {
+	color: $msRed
+}
+
+.navbar-inverse .navbar-inner #members ul.dropdown-menu a:hover.logout:hover,
+.navbar-inverse .navbar-inner #members ul.dropdown-menu a:focus.logout:focus {
+	color: darken($msRed, 33%);
+	text-decoration: none
+}

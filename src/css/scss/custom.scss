@@ -1,0 +1,18 @@
+// custom.scss, OPACUserCSS, Jake Deery on behalf of City College Plymouth, 2021
+
+// this scss file just contains import rules to various aspects of the overall
+// site css structures
+
+//
+//
+// library imports
+
+//
+//
+// custom imports
+@import 'custom-generic.scss'; // rules for all elements/regularly used elements
+@import 'custom-nav.scss'; // rules for navbar
+@import 'custom-header.scss'; // rules for header area
+@import 'custom-page.scss'; // rules for page area
+@import 'custom-opac.scss'; // rules for opac overrides
+@import 'custom-credits.scss'; // rules for footer area

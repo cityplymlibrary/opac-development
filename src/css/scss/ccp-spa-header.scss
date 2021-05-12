@@ -1,0 +1,115 @@
+// ccp-spa-header.scss, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// header
+#-ccp-header-region {
+	background: linear-gradient(rgba(0,0,0,.33),rgba(0,0,0,.33)), url('//ccp.vo.llownd.net/library/opac/bitmaps/static/ccp-lib-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom; 
+	background-size: cover;
+	height: auto;
+	
+	@media(min-width: $breakpoint-pc) {
+		height: 32rem
+	}
+
+	// for clients using high-contrast mode
+	@media(forced-colors: active) {
+		background-image: none
+	}
+}
+
+//
+// quick links
+.-ccp-ql-wrapper {
+	max-width: 1283px;
+	margin: 0 auto;
+	position: relative
+}
+
+.-ccp-ql-container {
+	padding: 35px;
+	border-radius: .33rem .33rem 0 0;
+	position: static;
+	right: auto;
+	bottom: auto;
+	width: 100%;
+	min-width: 0;
+	max-width: 100%;
+	background-color: $msCharcoal;
+	
+	@media(min-width: $breakpoint-pc) {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		max-width: 30%;
+		min-width: 320px
+	}
+
+	h3, h4, h5,
+	.h3, .h4, .h5 {
+		color: $white
+	}
+
+	ul li::before {
+		color: $white
+	}
+
+	ul li a {
+		color: $white;
+
+		&:hover, &:focus {
+			color: darken($msCloudy, 33%);
+		}
+	}
+}
+
+//
+// header matter
+.-ccp-logo {
+	width: 6rem;
+	height: auto
+}
+
+.-ccp-site-title {
+	color: $white;
+	font-size: 4rem!important;
+	font-weight: normal!important
+}
+
+.-ccp-page-title {
+	color: $white;
+	font-weight: normal!important
+}
+
+//
+// breadcrumbs
+.-ccp-breadcrumb-inner {
+	margin: 1rem 0;
+	list-style: none
+}
+
+.-ccp-breadcrumb-item {
+	display: inline;
+	margin: 0 1rem;
+	color: $white;
+
+	a {
+		color: $white!important;
+
+		&:hover, &:focus {
+			color: darken($msCloudy, 33%)!important
+		}
+	}
+
+	&:first-child:before {
+		content: "";
+		display: none
+	}
+
+	&:not(:first-child):before {
+		content: "\00a0\00bb\00a0"
+	}
+}

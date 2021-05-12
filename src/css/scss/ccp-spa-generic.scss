@@ -1,0 +1,331 @@
+// ccp-spa-generic.scss, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// generic
+#-ccp-header-region,
+#-ccp-page-region,
+#-ccp-footer-region,
+.-ccp-ql-container {
+	font-size: 1rem;
+	
+	p {
+		padding: 0 0 .75em;
+		margin: 0
+	}
+
+	h1, h2, h3,
+	h4, h5, h6,
+	.h1, .h2, .h3,
+	.h4, .h5, .h6 {
+		font-weight: bold;
+		line-height: 1.2;
+		margin-bottom: 1rem
+	}
+
+	h1, .h1 {
+		font-size: 2.1875rem
+	}
+
+	h2, .h2 {
+		font-size: 1.75rem
+	}
+
+	h3, .h3 {
+		font-size: 1.53125rem
+	}
+
+	h4, .h4 {
+		font-size: 1.3125rem
+	}
+
+	h5, .h5 {
+		font-size: 1.09375rem
+	}
+
+	h6, .h6 {
+		font-size: .875rem
+	}
+
+	ul {
+		list-style-type: none
+	}
+
+	ul li:before {
+		content: "\00BB";
+		margin-right: 10px;
+		margin-left: -20px
+	}
+}
+
+//
+// text decorations
+.-ccp-post-headline {
+	font-size: 2.5rem!important
+}
+
+.-ccp-text-sm {
+	font-size: 1rem!important
+}
+
+.-ccp-text-md {
+	font-size: 1.25rem!important
+}
+
+.-ccp-text-lg {
+	font-size: 1.5rem!important
+}
+
+.-ccp-text-white {
+	color: $white!important
+}
+
+.-ccp-text-black {
+	color: $black!important
+}
+
+.-ccp-text-red {
+	color: $msRed!important
+}
+
+.-ccp-text-green {
+	color: $msGreen!important
+}
+
+.-ccp-text-blue {
+	color: $msBlue!important
+}
+
+.-ccp-heading-u:after {
+	margin-top: .5rem;
+	content: "";
+	display: block;
+	max-width: 33.3%;
+	border-bottom: .25rem solid transparent;
+	border-radius: .33rem
+}
+
+.-ccp-heading-u-white:after {
+	border-bottom: .25rem solid $white
+}
+
+.-ccp-heading-u-black:after {
+	border-bottom: .25rem solid $black
+}
+
+.-ccp-heading-u-cloudy:after {
+	border-bottom: .25rem solid $msCloudy
+}
+
+.-ccp-heading-u-charcoal:after {
+	border-bottom: .25rem solid $msCharcoal
+}
+
+.-ccp-heading-u-danger:after {
+	border-bottom: .25rem solid $msRed
+}
+
+.-ccp-heading-u-alert:after {
+	border-bottom: .25rem solid $msGold
+}
+
+.-ccp-heading-u-purple:after {
+	border-bottom: .25rem solid $ccpHue1
+}
+
+.-ccp-heading-u-purple2:after {
+	border-bottom: .25rem solid $ccpText1
+}
+
+.-ccp-heading-u-orange:after {
+	border-bottom: .25rem solid $ccpHue2
+}
+
+.-ccp-heading-u-orange2:after {
+	border-bottom: .25rem solid $ccpText2
+}
+
+.-ccp-heading-u-green:after {
+	border-bottom: .25rem solid $ccpHue3
+}
+
+.-ccp-heading-u-green2:after {
+	border-bottom: .25rem solid $ccpText3
+}
+
+//
+// block modifiers
+.-ccp-w-100 {
+	width: 100%!important
+}
+
+.-ccp-w-33 {
+	width: 33.3%!important
+}
+
+.-ccp-w-25 {
+	width: 25%!important
+}
+
+.-ccp-h-100 {
+	height: 100%!important
+}
+
+.-ccp-h-33 {
+	height: 33.3%!important
+}
+
+.-ccp-h-25 {
+	height: 25%!important
+}
+
+.-ccp-r-33 {
+	border-radius: .33rem
+}
+
+//
+// margins & paddings
+.-ccp-margin-sm {
+	margin: .5rem!important
+}
+
+.-ccp-margin-1 {
+	margin: 1rem!important
+}
+
+.-ccp-margin-md {
+	margin: 2rem!important
+}
+
+.-ccp-margin-lg {
+	margin: 3rem!important
+}
+
+.-ccp-margin-x-sm {
+	margin-right: .5rem!important;
+	margin-left: .5rem!important
+}
+
+.-ccp-margin-x-1 {
+	margin-right: 1rem!important;
+	margin-left: 1rem!important
+}
+
+.-ccp-margin-x-md {
+	margin-right: 2rem!important;
+	margin-left: 2rem!important
+}
+
+.-ccp-margin-x-lg {
+	margin-right: 3rem!important;
+	margin-left: 3rem!important
+}
+
+.-ccp-margin-y-sm {
+	margin-top: .5rem!important;
+	margin-bottom: .5rem!important
+}
+
+.-ccp-margin-y-1 {
+	margin-top: 1rem!important;
+	margin-bottom: 1rem!important
+}
+
+.-ccp-margin-y-md {
+	margin-top: 2rem!important;
+	margin-bottom: 2rem!important
+}
+
+.-ccp-margin-y-lg {
+	margin-top: 3rem!important;
+	margin-bottom: 3rem!important
+}
+
+.-ccp-margin-t-0 {
+	margin-top: 0!important
+}
+
+.-ccp-margin-b-0 {
+	margin-bottom: 0!important
+}
+
+.-ccp-padding-sm {
+	padding: .5rem!important
+}
+
+.-ccp-padding-1 {
+	padding: 1rem!important
+}
+
+.-ccp-padding-md {
+	padding: 2rem!important
+}
+
+.-ccp-padding-lg {
+	padding: 3rem!important
+}
+
+.-ccp-padding-x-sm {
+	padding-right: .5rem!important;
+	padding-left: .5rem!important
+}
+
+.-ccp-padding-x-1 {
+	padding-right: 1rem!important;
+	padding-left: 1rem!important
+}
+
+.-ccp-padding-x-md {
+	padding-right: 2rem!important;
+	padding-left: 2rem!important
+}
+
+.-ccp-padding-x-lg {
+	padding-right: 3rem!important;
+	padding-left: 3rem!important
+}
+
+.-ccp-padding-y-sm {
+	padding-top: .5rem!important;
+	padding-bottom: .5rem!important
+}
+
+.-ccp-padding-y-1 {
+	padding-top: 1rem!important;
+	padding-bottom: 1rem!important
+}
+
+.-ccp-padding-y-md {
+	padding-top: 2rem!important;
+	padding-bottom: 2rem!important
+}
+
+.-ccp-padding-y-lg {
+	padding-top: 3rem!important;
+	padding-bottom: 3rem!important
+}
+
+.-ccp-padding-t-0 {
+	padding-top: 0!important
+}
+
+.-ccp-padding-b-0 {
+	padding-bottom: 0!important
+}
+
+//
+// flexboxes
+.-ccp-flex-start {
+	display: flex;
+	align-items: flex-start
+}
+
+.-ccp-flex-center {
+	display: flex;
+	align-items: center
+}
+
+.-ccp-flex-end {
+	display: flex;
+	align-items: flex-end
+}

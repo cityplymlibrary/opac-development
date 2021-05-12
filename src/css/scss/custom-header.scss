@@ -1,0 +1,85 @@
+// custom-header.scss, OPACUserCSS, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+//
+// header
+
+//
+// title header
+#opacheader {
+	background: linear-gradient(rgba(0,0,0,.33),rgba(0,0,0,.33)),  url('//ccp.vo.llownd.net/library/opac/bitmaps/static/ccp-lib-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center bottom; 
+	background-size: cover;
+	
+	p {
+		color: $white
+	}
+	
+	a {
+		color: $white;
+		text-decoration: none;
+		
+		&:visited {
+			color: $white
+		}
+		
+		&:hover, &:focus,
+		&:active, &.active {
+			color: $white;
+			text-decoration: underline
+		}
+	}
+
+	h1, h2, h3,
+	.h1, .h2, .h3 {
+		font-size: 2.1875rem;
+		font-weight: 500;
+		line-height: 1.2;
+		margin: 0 1rem;
+		padding: 1rem 0;
+		color: $white
+	}
+}
+
+//
+// search box
+#opac-main-search {
+	margin: 0;
+	padding: 0;
+
+	label {
+		color: $msCloudy
+	}
+}
+
+.mastheadsearch {
+	margin: 0;
+	padding: 1rem;
+	box-shadow: 0 .25rem .25rem 0 rgba(0, 0, 0, .33);
+	background-color: $ccpHue1
+}
+
+#moresearches {
+	margin: 0;
+	padding: 1rem;
+	background-color: $msCloudy;
+	color: $msCharcoal
+}
+
+#moresearches li:last-child::after {
+	content: "";
+}
+
+#moresearches li::after {
+	content: " | ";
+}
+
+//
+// dropdown items
+.dropdown-item {
+	&:hover, &:focus {
+		background-color: darken($msCloudy, 33%)
+	}
+}
