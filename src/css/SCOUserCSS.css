@@ -37,12 +37,8 @@
 
 /* pc-only rules */
 @media(min-width: 992px) {
-	#opacheader {
-		height: 32rem
-	}
-
 	#opacheader h1 {
-		padding: 13.2rem 15rem;
+		padding: 5rem 15rem;
 		font-size: 4rem
 	}
 }
