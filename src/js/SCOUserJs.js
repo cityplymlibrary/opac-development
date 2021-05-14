@@ -1,7 +1,7 @@
 // sco user js, jake deery on behalf of city college plymouth, 2021
 $(document).ready(function() {
 	// engineer the page
-	$('#opacheader').html('<h1 class=\"-ccp-heading-u -ccp-heading-u-orange\">City College Plymouth Library<\/h1>'); // inject header
+	$('#opacheader').html('<h1 class=\"-ccp-heading-u -ccp-heading-u-hue2\">City College Plymouth Library<\/h1>'); // inject header
 
 	// finish the details
 	$('#masthead').find('h1').text('Library Self-service systems'); // set title

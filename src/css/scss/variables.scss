@@ -21,14 +21,16 @@ $msLagoon: rgba(3,120,124,1);
 $msPurple: rgba(101,102,163,1);
 $msMagenta: rgba(135,68,125,1);
 
+$ccpBlack: rgba(35,31,32,1); // black
+$ccpWhite: rgba(255,255,255,1); // white
 
-$ccpHue1: rgba(23,0,45,1); // purple
-$ccpHue2: rgba(255,145,0,1); // orange
-$ccpHue3: rgba(6,214,160,1); // green
+$ccpHue1: rgba(34,87,122,1); // hue1
+$ccpHue2: rgba(56,163,165,1); // hue2
+$ccpHue3: rgba(87,204,153,1); // hue3
 
-$ccpText1: lighten($ccpHue1, 85%); // text for hue1
-$ccpText2: darken($ccpHue2, 85%); // text for hue2
-$ccpText3: darken($ccpHue3, 85%); // text for hue3
+$ccpText1: lighten($ccpHue1, 66%); // text for hue1
+$ccpText2: darken($ccpHue2, 66%); // text for hue2
+$ccpText3: darken($ccpHue3, 66%); // text for hue3
 
 
 $breakpoint-pc: 992px;

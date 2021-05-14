@@ -251,7 +251,7 @@
 	}
 }
 
-.-ccp-purple-section {
+.-ccp-hue1-section {
 	background-color: $ccpHue1;
 
 	p, span, div, pre, code, strong, em, li {
@@ -279,35 +279,7 @@
 	}
 }
 
-.-ccp-purple2-section {
-	background-color: $ccpText1;
-
-	p, span, div, pre, code, strong, em, li {
-		color: $ccpHue1
-	}
-		
-	a {
-		color: $ccpHue1;
-
-		&:visited {
-			color: $ccpHue1
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: lighten($msCharcoal, 33%)
-		}
-	}
-		
-	h1, h2, h3,
-	h4, h5, h6,
-	.h1, .h2, .h3,
-	.h4, .h5, .h6 {
-		color: $ccpHue1
-	}
-}
-
-.-ccp-orange-section {
+.-ccp-hue2-section {
 	background-color: $ccpHue2;
 
 	p, span, div, pre, code, strong, em, li {
@@ -335,35 +307,7 @@
 	}
 }
 
-.-ccp-orange2-section {
-	background-color: $ccpText2;
-
-	p, span, div, pre, code, strong, em, li {
-		color: $ccpHue2
-	}
-	
-	a {
-		color: $ccpHue2;
-
-		&:visited {
-			color: $ccpHue2
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: lighten($msCharcoal, 33%)
-		}
-	}
-	
-	h1, h2, h3,
-	h4, h5, h6,
-	.h1, .h2, .h3,
-	.h4, .h5, .h6 {
-		color: $ccpHue2
-	}
-}
-
-.-ccp-green-section {
+.-ccp-hue3-section {
 	background-color: $ccpHue3;
 
 	p, span, div, pre, code, strong, em, li {
@@ -388,34 +332,6 @@
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
 		color: $ccpText3
-	}
-}
-
-.-ccp-green2-section {
-	background-color: $ccpText3;
-
-	p, span, div, pre, code, strong, em, li {
-		color: $ccpHue3
-	}
-	
-	a {
-		color: $ccpHue3;
-
-		&:visited {
-			color: $ccpHue3
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: lighten($msCharcoal, 33%)
-		}
-	}
-	
-	h1, h2, h3,
-	h4, h5, h6,
-	.h1, .h2, .h3,
-	.h4, .h5, .h6 {
-		color: $ccpHue3
 	}
 }
 
@@ -505,9 +421,9 @@
 .-ccp-card-cloudy,
 .-ccp-card-black,
 .-ccp-card-charcoal,
-.-ccp-card-purple,
-.-ccp-card-orange,
-.-ccp-card-green {
+.-ccp-card-hue1,
+.-ccp-card-hue2,
+.-ccp-card-hue3 {
 	position: relative;
 	min-height: 100%;
 	margin: .5rem;
@@ -519,9 +435,9 @@
 .-ccp-card-cloudy::after,
 .-ccp-card-black::after,
 .-ccp-card-charcoal::after,
-.-ccp-card-purple::after,
-.-ccp-card-orange::after,
-.-ccp-card-green::after {
+.-ccp-card-hue1::after,
+.-ccp-card-hue2::after,
+.-ccp-card-hue3::after {
 	content: "Go \00bb";
 	font-weight: bold;
 	position: absolute;
@@ -661,7 +577,7 @@
 	}
 }
 
-.-ccp-card-purple {
+.-ccp-card-hue1 {
 	background-color: $ccpHue1;
 
 	&:hover, &:focus,
@@ -694,7 +610,7 @@
 	}
 }
 
-.-ccp-card-orange {
+.-ccp-card-hue2 {
 	background-color: $ccpHue2;
 
 	&:hover, &:focus,
@@ -727,7 +643,7 @@
 	}
 }
 
-.-ccp-card-green {
+.-ccp-card-hue3 {
 	background-color: $ccpHue3;
 
 	&:hover, &:focus,
@@ -768,12 +684,12 @@
 .-ccp-card-black:focus .-ccp-card-header,
 .-ccp-card-charcoal:hover .-ccp-card-header,
 .-ccp-card-charcoal:focus .-ccp-card-header,
-.-ccp-card-purple:hover .-ccp-card-header,
-.-ccp-card-purple:focus .-ccp-card-header,
-.-ccp-card-orange:hover .-ccp-card-header,
-.-ccp-card-orange:focus .-ccp-card-header,
-.-ccp-card-green:hover .-ccp-card-header,
-.-ccp-card-green:focus .-ccp-card-header {
+.-ccp-card-hue1:hover .-ccp-card-header,
+.-ccp-card-hue1:focus .-ccp-card-header,
+.-ccp-card-hue2:hover .-ccp-card-header,
+.-ccp-card-hue2:focus .-ccp-card-header,
+.-ccp-card-hue3:hover .-ccp-card-header,
+.-ccp-card-hue3:focus .-ccp-card-header {
 	text-decoration: none
 }
 

@@ -38,7 +38,7 @@
 	width: 100%;
 	min-width: 0;
 	max-width: 100%;
-	background-color: $msCharcoal;
+	background-color: darken($ccpHue1, 15%);
 	
 	@media(min-width: $breakpoint-pc) {
 		position: absolute;
