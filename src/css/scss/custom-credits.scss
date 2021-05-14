@@ -6,5 +6,16 @@
 #opaccredits {
 	margin: 0;
 	padding: 1rem;
-	background-color: $black
+	background-color: $ccpBlack
+}
+
+#opaccredits::before {
+	content: "";
+	display: block;
+	margin: 0 auto 1rem auto;
+	padding: 0;
+	width: 100%;
+	max-width: 1440px;
+	border-bottom: .25rem solid $ccpWhite;
+	border-radius: .33rem;
 }

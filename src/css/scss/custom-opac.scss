@@ -22,7 +22,7 @@
 //
 // search results
 #numresults, #selections {
-	color: $black
+	color: $ccpBlack
 }
 
 //
@@ -30,6 +30,7 @@
 #facetcontainer {
 	overflow: hidden;
 	border: 1px solid darken($msCloudy, 33%);
+	border-right-color: transparent;
 	border-radius: .33rem
 }
 
@@ -43,8 +44,9 @@
 
 	a {
 		background-color: $msCloudy;
-		color: $black;
-		border-bottom: 1px solid darken($msCloudy, 33%)
+		color: $ccpBlack;
+		border-bottom: 1px solid darken($msCloudy, 33%);
+		border-right: 1px solid darken($msCloudy, 33%)
 	}
 }
 
@@ -71,7 +73,7 @@
 
 #selections-toolbar,
 .selections-toolbar {
-	background: $white;
+	background: $ccpWhite;
 	border: 1px solid transparent
 }
 
@@ -106,7 +108,7 @@
 // suggestions box
 .suggestion {
 	background-color: $msCloudy;
-	color: $black;
+	color: $ccpBlack;
 	border: 1px solid transparent;
 	border-radius: .33rem
 }
@@ -116,24 +118,24 @@
 // details page
 #action, .actions,
 .toolbar, .view{
-	color: $black;
+	color: $ccpBlack;
 
 	i.fa {
-		color: $black
+		color: $ccpBlack
 	}
 
 	a {
-		color: $msGreen;
+		color: $msBlue;
 
 		i.fa {
-			color: $msGreen
+			color: $msBlue
 		}
 
 		&:hover, &:focus {
-			color: darken($msGreen, 33%);
+			color: darken($msBlue, 33%);
 			
 			i.fa {
-			color: darken($msGreen, 33%)
+			color: darken($msBlue, 33%)
 			}
 		}
 	}
@@ -152,7 +154,7 @@
 }
 
 .view {
-	color: $black;
+	color: $ccpBlack;
 
 	border-top: 1px solid darken($msCloudy, 33%);
 	border-right: 1px solid darken($msCloudy, 33%);
@@ -162,7 +164,7 @@
 }
 
 .current-view {
-	background-color: $white
+	background-color: $ccpWhite
 }
 
 //

@@ -14,20 +14,20 @@
 	background-size: cover;
 	
 	p {
-		color: $white
+		color: $ccpWhite
 	}
 	
 	a {
-		color: $white;
+		color: $ccpWhite;
 		text-decoration: none;
 		
 		&:visited {
-			color: $white
+			color: $ccpWhite
 		}
 		
 		&:hover, &:focus,
 		&:active, &.active {
-			color: $white;
+			color: $ccpWhite;
 			text-decoration: underline
 		}
 	}
@@ -39,7 +39,7 @@
 		line-height: 1.2;
 		margin: 0 1rem;
 		padding: 1rem 0;
-		color: $white
+		color: $ccpWhite
 	}
 }
 

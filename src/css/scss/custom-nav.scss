@@ -8,10 +8,10 @@
 // logo
 #logo {
 	display: none;
-	background: transparent url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-cloudy-logo.png') no-repeat left center;
+	background: transparent url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-white-logo.png') no-repeat left center;
 
 	&:hover, &:focus {
-		background: transparent url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-white-logo.png') no-repeat left center
+		background: transparent url('//ccp.vo.llownd.net/library/opac/bitmaps/static/koha-cloudy-logo.png') no-repeat left center
 	}
 
 	@media(min-width: $breakpoint-pc) {
@@ -19,14 +19,14 @@
 	}
 }
 
-img[src="/opac-tmpl/bootstrap/images/koha-hue3-logo.png"] {
+img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 	display: none
 }
 
 //
 // navbar
 .navbar-inverse .navbar-inner {
-	background-color: $msCharcoal;
+	background-color: $ccpBlack;
 	padding: .5rem 1rem;
 	border: none
 }
@@ -34,19 +34,19 @@ img[src="/opac-tmpl/bootstrap/images/koha-hue3-logo.png"] {
 .navbar-inverse .nav {
 	li {
 		a {
-			color: darken($msCloudy, 33%);
+			color: $ccpWhite;
 			text-shadow: none;
 
 			i.fa {
-				color: darken($msCloudy, 33%)
+				color: $ccpWhite
 			}
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: $white;
+				color: darken($ccpWhite, 33%);
 
 				i.fa {
-					color: $white
+					color: darken($ccpWhite, 33%)
 				}
 			}
 		}
@@ -54,23 +54,23 @@ img[src="/opac-tmpl/bootstrap/images/koha-hue3-logo.png"] {
 
 	// dropdown carets
 	li.dropdown > .dropdown-toggle b.caret {
-		border-top-color: darken($msCloudy, 33%);
-		border-bottom-color: darken($msCloudy, 33%)
+		border-top-color: $ccpWhite;
+		border-bottom-color: $ccpWhite
 	}
 
 	li.dropdown.open > .dropdown-toggle b.caret,
 	li.dropdown > a:hover b.caret,
 	li.dropdown > a:focus b.caret,
 	li.dropdown > a:active b.caret {
-		border-top-color: $white;
-		border-bottom-color: $white
+		border-top-color: darken($ccpWhite, 33%);
+		border-bottom-color: darken($ccpWhite, 33%)
 	}
 
 	li.dropdown.open > .dropdown-toggle .caret {
 		&:hover, &:focus,
 		&:active &.active {
-			border-top-color: $white;
-			border-bottom-color: $white
+			border-top-color: darken($ccpWhite, 33%);
+			border-bottom-color: darken($ccpWhite, 33%)
 		}
 	}
 
@@ -78,17 +78,17 @@ img[src="/opac-tmpl/bootstrap/images/koha-hue3-logo.png"] {
 	li.dropdown.open > .dropdown-toggle {
 		&:hover, &:focus,
 		&:active &.active {
-			color: $white
+			color: darken($ccpWhite, 33%)
 		}
 	}
 }
 
 // members account & logout
 .navbar-inverse .navbar-inner #members ul.dropdown-menu a {
-	color: $msGreen;
+	color: $msBlue;
 	
 	&:hover, &:focus {
-		color: darken($msGreen, 33%);
+		color: darken($msBlue, 33%);
 		text-decoration: none
 	}
 }

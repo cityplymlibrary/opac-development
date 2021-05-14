@@ -51,7 +51,7 @@
 		list-style-type: none
 	}
 
-	ul li:before {
+	ul li::before {
 		content: "\00BB";
 		margin-right: 10px;
 		margin-left: -20px
@@ -77,11 +77,11 @@
 }
 
 .-ccp-text-white {
-	color: $white!important
+	color: $ccpWhite!important
 }
 
 .-ccp-text-black {
-	color: $black!important
+	color: $ccpBlack!important
 }
 
 .-ccp-text-red {
@@ -96,7 +96,7 @@
 	color: $msBlue!important
 }
 
-.-ccp-heading-u:after {
+.-ccp-heading-u::after {
 	margin-top: .5rem;
 	content: "";
 	display: block;
@@ -105,51 +105,51 @@
 	border-radius: .33rem
 }
 
-.-ccp-heading-u-white:after {
-	border-bottom: .25rem solid $white
+.-ccp-heading-u-white::after {
+	border-bottom: .25rem solid $ccpWhite
 }
 
-.-ccp-heading-u-black:after {
-	border-bottom: .25rem solid $black
+.-ccp-heading-u-black::after {
+	border-bottom: .25rem solid $ccpBlack
 }
 
-.-ccp-heading-u-cloudy:after {
+.-ccp-heading-u-cloudy::after {
 	border-bottom: .25rem solid $msCloudy
 }
 
-.-ccp-heading-u-charcoal:after {
+.-ccp-heading-u-charcoal::after {
 	border-bottom: .25rem solid $msCharcoal
 }
 
-.-ccp-heading-u-danger:after {
+.-ccp-heading-u-danger::after {
 	border-bottom: .25rem solid $msRed
 }
 
-.-ccp-heading-u-alert:after {
+.-ccp-heading-u-alert::after {
 	border-bottom: .25rem solid $msGold
 }
 
-.-ccp-heading-u-hue1:after {
+.-ccp-heading-u-hue1::after {
 	border-bottom: .25rem solid $ccpHue1
 }
 
-.-ccp-heading-u-hue2:after {
+.-ccp-heading-u-hue2::after {
 	border-bottom: .25rem solid $ccpHue2
 }
 
-.-ccp-heading-u-hue3:after {
+.-ccp-heading-u-hue3::after {
 	border-bottom: .25rem solid $ccpHue3
 }
 
-.-ccp-heading-u-text1:after {
+.-ccp-heading-u-text1::after {
 	border-bottom: .25rem solid $ccpText1
 }
 
-.-ccp-heading-u-text2:after {
+.-ccp-heading-u-text2::after {
 	border-bottom: .25rem solid $ccpText2
 }
 
-.-ccp-heading-u-text3:after {
+.-ccp-heading-u-text3::after {
 	border-bottom: .25rem solid $ccpText3
 }
 

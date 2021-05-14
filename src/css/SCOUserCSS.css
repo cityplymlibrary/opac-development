@@ -1,10 +1,6 @@
 /* SCO Client CSS, Jake Deery on behalf of City College Plymouth, 2021 */
 
 /* hide unncesessary stuff */
-.navbar-inverse {
-	display: none
-}
-
 #opaccredits {
 	display: none
 }
@@ -33,6 +29,11 @@
 
 .nav.nav-tabs li.active a {
 	background-color: #f3f2f1
+}
+
+/* text */
+legend::after, .legend::after {
+	max-width: 33%;
 }
 
 /* pc-only rules */

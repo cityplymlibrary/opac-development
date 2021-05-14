@@ -50,15 +50,15 @@
 
 	h3, h4, h5,
 	.h3, .h4, .h5 {
-		color: $white
+		color: $ccpWhite
 	}
 
 	ul li::before {
-		color: $white
+		color: $ccpWhite
 	}
 
 	ul li a {
-		color: $white;
+		color: $ccpWhite;
 
 		&:hover, &:focus {
 			color: darken($msCloudy, 33%);
@@ -74,13 +74,13 @@
 }
 
 .-ccp-site-title {
-	color: $white;
+	color: $ccpWhite;
 	font-size: 4rem!important;
 	font-weight: normal!important
 }
 
 .-ccp-page-title {
-	color: $white;
+	color: $ccpWhite;
 	font-weight: normal!important
 }
 
@@ -94,22 +94,26 @@
 .-ccp-breadcrumb-item {
 	display: inline;
 	margin: 0 1rem;
-	color: $white;
+	color: $ccpWhite;
 
 	a {
-		color: $white!important;
+		color: $ccpWhite!important;
 
 		&:hover, &:focus {
 			color: darken($msCloudy, 33%)!important
 		}
 	}
 
-	&:first-child:before {
+	&:first-child {
+		margin: 0 1rem 0 0
+	}
+
+	&:first-child::before {
 		content: "";
 		display: none
 	}
 
-	&:not(:first-child):before {
+	&:not(:first-child)::before {
 		content: "\00a0\00bb\00a0"
 	}
 }

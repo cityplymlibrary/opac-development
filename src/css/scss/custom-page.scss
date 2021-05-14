@@ -9,7 +9,7 @@
 .main {
 	margin: 0;
 	padding: 1rem;
-	background-color: $white
+	background-color: $ccpWhite
 }
 
 //
@@ -45,14 +45,14 @@
 
 .ui-widget-content, .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	a {
-		color: $black
+		color: $ccpBlack
 	}
 }
 
 .ui-widget-content, .ui-tabs .ui-state-default {
 	a, a:link,
 	a:visited {
-		color: $msGreen
+		color: $msBlue
 	}
 }
 
@@ -99,12 +99,12 @@ th, td {
 
 .table-striped tbody > tr:nth-child(2n+1) > td,
 .table-striped tbody > tr:nth-child(2n+1) > th {
-	background-color: $white
+	background-color: $ccpWhite
 }
 
 .table-striped tbody > tr:nth-child(2n+1) > td,
 .table-striped tbody > tr:nth-child(2n+1) > th {
-	background-color: $white
+	background-color: $ccpWhite
 }
 
 //
@@ -128,27 +128,27 @@ th, td {
 
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $msGreen;
-		color: $white
+		background-color: $msBlue;
+		color: $ccpWhite
 	}
 }
 
 #menu li.active a {
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $msGreen;
-		color: $white
+		background-color: $msBlue;
+		color: $ccpWhite
 	}
 }
 
 //
 // recolour things
 legend, .legend {
-	color: $black;
+	color: $ccpBlack;
 	border-bottom: none
 }
 
-legend:after, .legend:after {
+legend::after, .legend::after {
 	content: "";
 	display: block;
 	border-bottom: .25rem solid darken($msCloudy, 33%);
@@ -156,9 +156,9 @@ legend:after, .legend:after {
 }
 
 .results_summary {
-	color: $black
+	color: $ccpBlack
 }
 
 caption, h5 {
-	color: $black
+	color: $ccpBlack
 }
