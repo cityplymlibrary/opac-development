@@ -70,7 +70,7 @@
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: darken($msCloudy, 33%)
+				color: darken($ccpWhite, 33%)
 			}
 		}
 
@@ -84,7 +84,7 @@
 }
 
 .-ccp-white-section {
-	background-color: $ccpWhite;
+	background-color: $white;
 
 	p, span, div, pre, code, strong, em, li {
 		color: $ccpBlack
@@ -127,7 +127,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msCloudy, 33%)
+			color: darken($ccpWhite, 33%)
 		}
 	}
 		
@@ -140,7 +140,7 @@
 }
 
 .-ccp-cloudy-section {
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 
 	p, span, div, pre, code, strong, em, li {
 		color: $ccpBlack
@@ -183,7 +183,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msCloudy, 33%)
+			color: darken($ccpWhite, 33%)
 		}
 	}
 	
@@ -211,7 +211,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msCloudy, 33%)
+			color: darken($ccpWhite, 33%)
 		}
 	}
 		
@@ -267,7 +267,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msCloudy, 33%)
+			color: darken($ccpText1, 33%)
 		}
 	}
 		
@@ -295,7 +295,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msCloudy, 33%)
+			color: darken($ccpText2, 33%)
 		}
 	}
 	
@@ -323,7 +323,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msCloudy, 33%)
+			color: darken($ccpText3, 33%)
 		}
 	}
 	
@@ -442,11 +442,11 @@
 }
 
 .-ccp-card-white {
-	background-color: $ccpWhite;
+	background-color: $white;
 
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $msCloudy
+		background-color: $ccpWhite
 	}
 
 	p, span, div, pre, code, strong, em, li {
@@ -475,7 +475,7 @@
 }
 
 .-ccp-card-cloudy {
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 
 	&:hover, &:focus,
 	&:active, &.active {
@@ -524,7 +524,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: $msCloudy
+			color: $ccpWhite
 		}
 	}
 		
@@ -557,7 +557,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: $msCloudy
+			color: $ccpWhite
 		}
 	}
 		
@@ -590,7 +590,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: $msCloudy
+			color: $ccpWhite
 		}
 	}
 

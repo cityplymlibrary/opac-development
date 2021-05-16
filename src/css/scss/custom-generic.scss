@@ -10,7 +10,7 @@ html {
 
 body {
 	color: $ccpBlack;
-	background-color: $msCloudy
+	background-color: $ccpWhite
 }
 
 body::after {
@@ -54,7 +54,7 @@ a {
 }
 
 hr {
-	border-top: 1px solid darken($msCloudy, 33%)
+	border-top: 1px solid darken($ccpWhite, 33%)
 }
 
 //
@@ -105,8 +105,8 @@ hr {
 	box-shadow: 0 0 0 1px transparent;
 
 	color: $ccpBlack!important;
-	background-color: $msCloudy!important;
-	border: 1px solid darken($msCloudy, 33%)!important;
+	background-color: $ccpWhite!important;
+	border: 1px solid darken($ccpWhite, 33%)!important;
 
 	&:hover, &:focus,
 	&:active, &.active {
@@ -155,8 +155,8 @@ hr {
 	text-decoration: none!important;
 
 	color: $ccpBlack;
-	background-color: $msCloudy;
-	border: 1px solid darken($msCloudy, 33%);
+	background-color: $ccpWhite;
+	border: 1px solid darken($ccpWhite, 33%);
 
 	&:hover, &:focus,
 	&:active, &.active {
@@ -189,7 +189,7 @@ hr {
 
 		color: inherit!important;
 		background-color: transparent!important;
-		border: 1px solid transparent!important;
+		border: 1px solid darken($ccpWhite, 33%)!important;
 		box-shadow: 0 0 0 1px transparent!important
 	}
 }
@@ -200,9 +200,9 @@ hr {
 	text-shadow: none;
 	text-decoration: none!important;
 
-	color: $ccpText2!important;
-	background-color: $ccpHue2!important;
-	border: 1px solid $ccpText2!important;
+	color: $ccpWhite!important;
+	background-color: $msRed!important;
+	border: 1px solid $ccpWhite!important;
 	
 
 	&:hover, &:focus,
@@ -212,9 +212,9 @@ hr {
 		text-decoration: none!important;
 
 		color: $ccpWhite!important;
-		background-color: darken($ccpHue2, 33%)!important;
-		border: 1px solid darken($ccpHue2, 11%)!important;
-		box-shadow: 0 0 0 1px $ccpHue2!important
+		background-color: darken($msRed, 15%)!important;
+		border: 1px solid darken($msRed, 10%)!important;
+		box-shadow: 0 0 0 1px $msRed!important
 	}
 }
 
@@ -257,7 +257,7 @@ input[type="search"], select, textarea,
 	line-height: normal;
 	background-image: none;
 	text-shadow: none;
-	border: 1px solid darken($msCloudy, 33%);
+	border: 1px solid darken($ccpWhite, 33%);
 	box-shadow: none;
 	border-radius: .33rem;
 
@@ -266,7 +266,7 @@ input[type="search"], select, textarea,
 		background-image: none;
 		text-shadow: none;
 		
-		border: 1px solid $msCloudy, 66%;
+		border: 1px solid $ccpWhite, 66%;
 		box-shadow: 0 0 0 1px darken($ccpHue3, 33%)
 	}
 

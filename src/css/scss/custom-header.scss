@@ -50,7 +50,7 @@
 	padding: 0;
 
 	label {
-		color: $msCloudy
+		color: $ccpWhite
 	}
 }
 
@@ -64,7 +64,7 @@
 #moresearches {
 	margin: 0;
 	padding: 1rem;
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 	color: $msCharcoal
 }
 
@@ -80,6 +80,6 @@
 // dropdown items
 .dropdown-item {
 	&:hover, &:focus {
-		background-color: darken($msCloudy, 33%)
+		background-color: darken($ccpWhite, 33%)
 	}
 }

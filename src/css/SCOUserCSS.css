@@ -31,11 +31,6 @@
 	background-color: #f3f2f1
 }
 
-/* text */
-legend::after, .legend::after {
-	max-width: 33%;
-}
-
 /* pc-only rules */
 @media(min-width: 992px) {
 	#opacheader h1 {

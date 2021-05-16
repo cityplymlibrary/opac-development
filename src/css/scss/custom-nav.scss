@@ -34,19 +34,19 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 .navbar-inverse .nav {
 	li {
 		a {
-			color: $ccpWhite;
+			color: lighten($ccpBlack, 85%);
 			text-shadow: none;
 
 			i.fa {
-				color: $ccpWhite
+				color: lighten($ccpBlack, 85%)
 			}
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: darken($ccpWhite, 33%);
+				color: lighten($ccpBlack, 55%);
 
 				i.fa {
-					color: darken($ccpWhite, 33%)
+					color: lighten($ccpBlack, 55%)
 				}
 			}
 		}
@@ -54,23 +54,23 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 
 	// dropdown carets
 	li.dropdown > .dropdown-toggle b.caret {
-		border-top-color: $ccpWhite;
-		border-bottom-color: $ccpWhite
+		border-top-color: lighten($ccpBlack, 85%);
+		border-bottom-color: lighten($ccpBlack, 85%)
 	}
 
 	li.dropdown.open > .dropdown-toggle b.caret,
 	li.dropdown > a:hover b.caret,
 	li.dropdown > a:focus b.caret,
 	li.dropdown > a:active b.caret {
-		border-top-color: darken($ccpWhite, 33%);
-		border-bottom-color: darken($ccpWhite, 33%)
+		border-top-color: lighten($ccpBlack, 55%);
+		border-bottom-color: lighten($ccpBlack, 55%)
 	}
 
 	li.dropdown.open > .dropdown-toggle .caret {
 		&:hover, &:focus,
 		&:active &.active {
-			border-top-color: darken($ccpWhite, 33%);
-			border-bottom-color: darken($ccpWhite, 33%)
+			border-top-color: lighten($ccpBlack, 55%);
+			border-bottom-color: lighten($ccpBlack, 55%)
 		}
 	}
 
@@ -78,7 +78,7 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 	li.dropdown.open > .dropdown-toggle {
 		&:hover, &:focus,
 		&:active &.active {
-			color: darken($ccpWhite, 33%)
+			color: lighten($ccpBlack, 55%)
 		}
 	}
 }

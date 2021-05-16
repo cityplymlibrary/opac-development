@@ -50,18 +50,18 @@
 
 	h3, h4, h5,
 	.h3, .h4, .h5 {
-		color: $ccpWhite
+		color: $ccpText1
 	}
 
 	ul li::before {
-		color: $ccpWhite
+		color: $ccpText1
 	}
 
 	ul li a {
-		color: $ccpWhite;
+		color: $ccpText1;
 
 		&:hover, &:focus {
-			color: darken($msCloudy, 33%);
+			color: darken($ccpText1, 33%);
 		}
 	}
 }
@@ -81,6 +81,7 @@
 
 .-ccp-page-title {
 	color: $ccpWhite;
+	font-size: 1.3125rem!important;
 	font-weight: normal!important
 }
 
@@ -100,7 +101,7 @@
 		color: $ccpWhite!important;
 
 		&:hover, &:focus {
-			color: darken($msCloudy, 33%)!important
+			color: darken($ccpWhite, 33%)!important
 		}
 	}
 

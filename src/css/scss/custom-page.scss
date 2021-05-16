@@ -9,14 +9,14 @@
 .main {
 	margin: 0;
 	padding: 1rem;
-	background-color: $ccpWhite
+	background-color: $white
 }
 
 //
 // breadcrumbs
 .breadcrumb {
 	margin: .5rem 0 .9375rem;
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 	border: 1px solid transparent;
 	border-radius: .33rem
 }
@@ -28,18 +28,18 @@
 //
 // ui tabs
 .ui-tabs .ui-tabs-nav li {
-	background: $msCloudy;
-	border-color: darken($msCloudy, 33%);
+	background: $ccpWhite;
+	border-color: darken($ccpWhite, 33%);
 	border-radius: .33rem .33rem 0 0;
 
 	&.ui-tabs-active {
-		border-color: darken($msCloudy, 33%);
+		border-color: darken($ccpWhite, 33%);
 		border-radius: .33rem .33rem 0 0
 	}
 }
 
 .ui-tabs .ui-tabs-panel {
-	border-color: darken($msCloudy, 33%);
+	border-color: darken($ccpWhite, 33%);
 	border-radius: .33rem
 }
 
@@ -64,47 +64,47 @@
 }
 
 th, td {
-	background-color: $msCloudy
+	background-color: $ccpWhite
 }
 
 .table-bordered {
-	border: 1px solid darken($msCloudy, 33%);
+	border: 1px solid darken($ccpWhite, 33%);
 	border-left: none
 }
 
 .table-bordered th, .table-bordered td {
-	border-left: 1px solid darken($msCloudy, 33%)
+	border-left: 1px solid darken($ccpWhite, 33%)
 }
 
 .table th, .table td {
-	border-top: 1px solid darken($msCloudy, 33%)
+	border-top: 1px solid darken($ccpWhite, 33%)
 }
 
 .table .sorting {
-	background: url('/opac-tmpl/bootstrap/images/ascdesc.gif') no-repeat scroll 100% 75% $msCloudy
+	background: url('/opac-tmpl/bootstrap/images/ascdesc.gif') no-repeat scroll 100% 75% $ccpWhite
 }
 
 .table .sorting_asc {
-	background: url('/opac-tmpl/bootstrap/images/asc.gif') no-repeat scroll 100% 80% $msCloudy
+	background: url('/opac-tmpl/bootstrap/images/asc.gif') no-repeat scroll 100% 80% $ccpWhite
 }
 
 .table .sorting_desc {
-	background: url('/opac-tmpl/bootstrap/images/desc.gif') no-repeat scroll 100% 80% $msCloudy
+	background: url('/opac-tmpl/bootstrap/images/desc.gif') no-repeat scroll 100% 80% $ccpWhite
 }
 
 .table .nosort, .table .nosort.sorting,
 .table .nosort.sorting_asc, .table .nosort.sorting_desc {
-	background-color: $msCloudy
-}
-
-.table-striped tbody > tr:nth-child(2n+1) > td,
-.table-striped tbody > tr:nth-child(2n+1) > th {
 	background-color: $ccpWhite
 }
 
 .table-striped tbody > tr:nth-child(2n+1) > td,
 .table-striped tbody > tr:nth-child(2n+1) > th {
 	background-color: $ccpWhite
+}
+
+.table-striped tbody > tr:nth-child(2n+1) > td,
+.table-striped tbody > tr:nth-child(2n+1) > th {
+	background-color: darken($ccpWhite, 5%)
 }
 
 //
@@ -117,13 +117,13 @@ th, td {
 //
 // menus
 .menu-collapse {
-	border-right: 1px solid darken($msCloudy, 33%)
+	border-right: 1px solid darken($ccpWhite, 33%)
 }
 
 #menu li a {
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 	border-radius: .33rem 0 0 .33rem;
-	border: 1px solid darken($msCloudy, 33%);
+	border: 1px solid darken($ccpWhite, 33%);
 	border-right: 1px solid transparent;
 
 	&:hover, &:focus,
@@ -151,7 +151,8 @@ legend, .legend {
 legend::after, .legend::after {
 	content: "";
 	display: block;
-	border-bottom: .25rem solid darken($msCloudy, 33%);
+	max-width: 33%;
+	border-bottom: .25rem solid darken($ccpWhite, 33%);
 	border-radius: .33rem
 }
 

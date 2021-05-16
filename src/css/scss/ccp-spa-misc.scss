@@ -1,0 +1,15 @@
+// ccp-spa-misc.scss, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+// spa accordeon sections
+#-spa-section-2,
+#-spa-section-3 {
+	display: none
+}
+
+.-ccp-no-decorations,
+a.-ccp-no-decorations,
+a.-ccp-no-decorations:hover,
+a.-ccp-no-decorations:focus {
+	text-decoration: none!important
+}

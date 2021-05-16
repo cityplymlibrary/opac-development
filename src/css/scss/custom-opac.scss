@@ -3,7 +3,8 @@
 //
 //
 // opac overrides
-#login {
+#login,
+#user_summary {
 	display: none
 }
 
@@ -29,7 +30,7 @@
 // search facets
 #facetcontainer {
 	overflow: hidden;
-	border: 1px solid darken($msCloudy, 33%);
+	border: 1px solid darken($ccpWhite, 33%);
 	border-right-color: transparent;
 	border-radius: .33rem
 }
@@ -43,32 +44,32 @@
 	margin: 0;
 
 	a {
-		background-color: $msCloudy;
+		background-color: $ccpWhite;
 		color: $ccpBlack;
-		border-bottom: 1px solid darken($msCloudy, 33%);
-		border-right: 1px solid darken($msCloudy, 33%)
+		border-bottom: 1px solid darken($ccpWhite, 33%);
+		border-right: 1px solid darken($ccpWhite, 33%)
 	}
 }
 
 //
 // bookbag form
 #bookbag_form {
-	border-bottom: 1px solid darken($msCloudy, 33%)
+	border-bottom: 1px solid darken($ccpWhite, 33%)
 }
 
 //
 // floating toolbar
 #floating {
 	overflow: hidden;
-	border: 1px solid darken($msCloudy, 33%);
+	border: 1px solid darken($ccpWhite, 33%);
 	border-radius: .33rem
 }
 
 #toolbar.toolbar,
 #toolbar.toolbar.clearfix {
-	background: $msCloudy;
+	background: $ccpWhite;
 	border: 1px solid transparent;
-	border-bottom: 1px solid darken($msCloudy, 33%)
+	border-bottom: 1px solid darken($ccpWhite, 33%)
 }
 
 #selections-toolbar,
@@ -107,7 +108,7 @@
 //
 // suggestions box
 .suggestion {
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 	color: $ccpBlack;
 	border: 1px solid transparent;
 	border-radius: .33rem
@@ -142,7 +143,7 @@
 }
 
 #action {
-	background-color: $msCloudy;
+	background-color: $ccpWhite;
 	border-color: transparent;
 	border-radius: .33rem
 }
@@ -150,16 +151,16 @@
 //
 // views
 #views {
-	border-bottom: 1px solid darken($msCloudy, 33%)
+	border-bottom: 1px solid darken($ccpWhite, 33%)
 }
 
 .view {
 	color: $ccpBlack;
 
-	border-top: 1px solid darken($msCloudy, 33%);
-	border-right: 1px solid darken($msCloudy, 33%);
+	border-top: 1px solid darken($ccpWhite, 33%);
+	border-right: 1px solid darken($ccpWhite, 33%);
 	border-bottom: none;
-	border-left: 1px solid darken($msCloudy, 33%);
+	border-left: 1px solid darken($ccpWhite, 33%);
 	border-radius: .33rem .33rem 0 0
 }
 
@@ -175,7 +176,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			border-color: darken($msCloudy, 33%)
+			border-color: darken($ccpWhite, 33%)
 		}
 	}
 }
