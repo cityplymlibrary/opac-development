@@ -145,7 +145,13 @@
 #action {
 	background-color: $ccpWhite;
 	border-color: transparent;
-	border-radius: .33rem
+	border-radius: .33rem;
+
+	li {
+		&::before {
+			content: none
+		}
+	}
 }
 
 //
@@ -199,4 +205,13 @@ a#ISBDview {
 .dataTables_filter input,
 .dataTables_filter label {
 	font-size: 1rem
+}
+
+//
+//
+// results menu
+.pg_menu li {
+	&::before {
+		content: none
+	}
 }

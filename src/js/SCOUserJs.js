@@ -1,5 +1,5 @@
 // sco user js, jake deery on behalf of city college plymouth, 2021
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) { 
 	// engineer the page
 	$('#sco_main .navbar-inverse').html('<div class=\"navbar-inner\"><div class=\"container-fluid\"><ul class=\"nav pull-right\"><li><a href=\"\/cgi-bin\/koha\/sco\/help.pl\"><i class=\"fa fa-info-circle\"><\/i> Help<\/a><\/li><\/ul><\/div><\/div>'); // inject nav
 	$('#opacheader').html('<h1 class=\"-ccp-heading-u -ccp-heading-u-hue2\">City College Plymouth Library<\/h1>'); // inject header

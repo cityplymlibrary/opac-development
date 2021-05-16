@@ -68,12 +68,20 @@
 	color: $msCharcoal
 }
 
-#moresearches li:last-child::after {
-	content: "";
+#moresearches li:last-child {
+	&::after {
+		content: none
+	}
 }
 
-#moresearches li::after {
-	content: " | ";
+#moresearches li {
+	&::before {
+		content: none
+	}
+
+	&::after {
+		content: " | "
+	}
 }
 
 //

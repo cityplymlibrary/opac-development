@@ -22,12 +22,20 @@
 }
 
 .breadcrumb > li {
+	&:before {
+		content: none
+	}
+
 	text-shadow: none
 }
 
 //
 // ui tabs
 .ui-tabs .ui-tabs-nav li {
+	&::before {
+		content: none
+	}
+
 	background: $ccpWhite;
 	border-color: darken($ccpWhite, 33%);
 	border-radius: .33rem .33rem 0 0;
@@ -120,16 +128,22 @@ th, td {
 	border-right: 1px solid darken($ccpWhite, 33%)
 }
 
-#menu li a {
-	background-color: $ccpWhite;
-	border-radius: .33rem 0 0 .33rem;
-	border: 1px solid darken($ccpWhite, 33%);
-	border-right: 1px solid transparent;
+#menu li {
+	&::before {
+		content: none
+	}
 
-	&:hover, &:focus,
-	&:active, &.active {
-		background-color: $msBlue;
-		color: $ccpWhite
+	a {
+		background-color: $ccpWhite;
+		border-radius: .33rem 0 0 .33rem;
+		border: 1px solid darken($ccpWhite, 33%);
+		border-right: 1px solid transparent;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msBlue;
+			color: $ccpWhite
+		}
 	}
 }
 

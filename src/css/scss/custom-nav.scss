@@ -102,3 +102,9 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 	color: darken($msRed, 33%);
 	text-decoration: none
 }
+
+.navbar .nav > li {
+	&::before {
+		content: none
+	}
+}

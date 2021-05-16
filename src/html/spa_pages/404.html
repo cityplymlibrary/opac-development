@@ -1,3 +1,16 @@
+<div class="-ccp-ql-wrapper">
+	<div class="-ccp-ql-container">
+		<h4 class="-ccp-heading-u -ccp-heading-u-text1">Related pages</h4>
+		<ul>
+			<li>
+				<a href="#!/hp">Homepage</a>
+			</li>
+			<li>
+				<a href="javascript:history.go(-1)">Go back a page</a>
+			</li>
+		</ul>
+	</div>
+</div>
 <div id="-ccp-page-region" class="col-md-12" role="main">
 	<section class="-ccp-cloudy-section">
 		<div class="-ccp-container">
@@ -28,10 +41,10 @@
 						You can use the menu and links at the top of the page
 					</li>
 					<li>
-						You can search our catalog using the search form at the top of this page.
+						You can search our catalog using the search form at the bottom of this page.
 					</li>
 					<li>
-						Return to the catalog home page.
+						<a href="#!/hp">Return to the catalog home page.</a>
 					</li>
 				</ul>
 				<p>
@@ -42,6 +55,23 @@
 						</li>
 					</ul>
 				</p>
+			</div>
+		</div>
+	</section>
+	<section class="-ccp-hue2-section">
+		<div class="-ccp-container">
+			<div class="-ccp-inner-lg">
+				<h2 class="-ccp-heading-u -ccp-heading-u-text2">Search the catalogue</h2>
+				<div class="-ccp-searchform-container">
+					<form class="-ccp-searchform" name="searchform" method="get" action="/cgi-bin/koha/opac-search.pl">
+						<div class="-ccp-searchform-inner">
+							<input type="text" title="Type search term" placeholder="Search for books, eBooks, journal articles, DVDs..." class="-ccp-searchform-input" name="q">
+							<button type="submit" class="-ccp-searchform-submit btn btn-default"><i class="fa fa-search fa-fw"></i> Go</button>
+							<input type="hidden" title="IDX" name="idx" value="">
+						</div>
+					</form>
+				</div>
+				<p><a href="/cgi-bin/koha/opac-search.pl">Advanced search &raquo;</a></p>
 			</div>
 		</div>
 	</section>

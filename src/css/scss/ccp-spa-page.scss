@@ -400,9 +400,24 @@
 	.-ccp-offset-grid {
 		padding-bottom: 3rem;
 
-		.-ccp-offset-grid-this {
+		.-ccp-offset-grid-top {
+			margin-top: -3rem;
+	    margin-bottom: 3rem
+		}
+
+		.-ccp-offset-grid-right {
+			margin-right: 1.5rem;
+			margin-left: -1.5rem
+		}
+
+		.-ccp-offset-grid-bottom {
 			margin-top: 3rem;
 			margin-bottom: -3rem
+		}
+
+		.-ccp-offset-grid-left {
+			margin-right: -1.5rem;
+			margin-left: 1.5rem
 		}
 	}
 }

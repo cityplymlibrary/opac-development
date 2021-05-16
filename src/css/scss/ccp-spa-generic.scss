@@ -46,16 +46,6 @@
 	h6, .h6 {
 		font-size: .875rem
 	}
-
-	ul {
-		list-style-type: none
-	}
-
-	ul li::before {
-		content: "\00BB";
-		margin-right: 10px;
-		margin-left: -20px
-	}
 }
 
 //
