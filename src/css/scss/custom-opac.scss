@@ -215,3 +215,11 @@ a#ISBDview {
 		content: none
 	}
 }
+
+//
+// sco
+.nav-tabs > li {
+	&::before {
+		content: none
+	}
+}

@@ -13,3 +13,20 @@ a.-ccp-no-decorations:hover,
 a.-ccp-no-decorations:focus {
 	text-decoration: none!important
 }
+
+//
+// gdrp banner
+#-gdpr-banner {
+	p {
+		padding: 1rem
+	}
+
+	a {
+		padding: 1rem
+	}
+
+	button {
+		display: inline;
+		margin: 0 1rem
+	}
+}

@@ -1,6 +1,14 @@
 // OPACUserJS, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
 document.addEventListener("DOMContentLoaded", function(event) { 
 	//
+	// gdpr
+	if(localStorage.getItem('-ccp-gdrp-dismissed') == null) $('body').prepend('<div id=\"-gdpr-banner\"><p>This website uses cookies to ensure you get the best experience on our website <a id=\"-gdpr-moreinfo\" href=\"#!\/privacy-policy\">More info \u00BB<\/a><button id=\"-gdpr-dismiss\" class=\"btn btn-primary\">Dismiss<\/button><\/p><\/div>');
+	$('#-gdpr-dismiss, #-gdpr-moreinfo').click(function() {
+		localStorage.setItem('-ccp-gdrp-dismissed', 'true');
+		$('#-gdpr-banner').remove();
+	});
+
+	//
 	// site-wide logic (MAIN FUNC)
 
 	// nav menus
@@ -8,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// login modal
 	$('#loginModal').html('<div class=\"modal-header\"><button type=\"button\" class=\"closebtn\" data-dismiss=\"modal\" aria-hidden=\"true\">\u00D7<\/button><h2 id=\"modalLoginLabel\">Log in to your account<\/h2><\/div><div id=\"modalAuth\" class=\"modal-body\"><h3>College student?<\/h3><p><a href=\"\/Shibboleth.sso\/Login?target=https:\/\/ccp.koha-ptfs.co.uk'+window.location.pathname+window.location.search+'\" class=\"btn btn-primary\">Go to College login &raquo;<\/a><\/p><h3>Staff or associate?<\/h3><p><a href=\"\/cgi-bin\/koha\/opac-user.pl\" class=\"btn btn-primary\">Go to local Koha login &raquo;<\/a><\/p><\/div>');
+
+	// search box
+	$('#translControl1').attr('placeholder', 'Search for books, eBooks, journal articles, DVDs...');
 
 	// moresearches
 	$('#moresearches').html('<ul><li><a href=\"\/cgi-bin\/koha\/opac-search.pl\">Advanced search<\/a><\/li><\/ul>');
