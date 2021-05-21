@@ -138,6 +138,68 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				this.breadcrumbFactory('<li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/hp\"><i class=\"fa fa-home fa-fw\"><\/i><\/a><\/li><li class=\"-ccp-breadcrumb-item\">How-tos &amp; support<\/li>');
 				this.pageFactory('<div class=\"-ccp-ql-wrapper\"><div class=\"-ccp-ql-container\"><h4 class=\"-ccp-heading-u -ccp-heading-u-text1\">Related pages<\/h4><ul><li><a href=\"#!\/how-tos\/logging-on\">Logging on to the Library<\/a><\/li><li><a href=\"#!\/how-tos\/google-workspace\">Accessing our Google services<\/a><\/li><li><a href=\"#!\/how-tos\/accessing-eresources\">Help accessing databases & eResources<\/a><\/li><li><a href=\"#!\/how-tos\/accessing-eresources\">Booking resources<\/a><\/li><\/ul><\/div><\/div><div id=\"-ccp-page-region\" class=\"col-md-12\" role=\"main\"><section class=\"-ccp-white-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-hue2\">Most common queries<\/h2><p>Section 1<\/p><\/div><\/div><\/section><section class=\"-ccp-hue2-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><div class=\"-ccp-grid-container -ccp-margin-y-1\"><div class=\"-ccp-grid-25\"><p>&nbsp;<\/p><\/div><div class=\"-ccp-grid-25\"><a href=\"#!\/online-resources\/databases\/a-z\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Browse databases by subject<\/h3><p>Looking for our online databases? Click here to see a list of our databases broken down by subject field.<\/p><\/div><\/div><\/a><\/div><div class=\"-ccp-grid-25\"><a href=\"#!\/online-resources\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Browse online resources<\/h3><p>Want to browse all of our online resources? Click here to see a complete directory of all our online resources.<\/p><\/div><\/div><\/a><\/div><div class=\"-ccp-grid-25\"><p>&nbsp;<\/p><\/div><\/div><\/div><\/div><\/section><\/div>');
 
+			} else if(this.cd == '#!/reading-lists') {
+				//
+				// reading-lists
+
+				this.pageTitle = 'Reading lists';
+				this.pageHeadline= 'Reading lists';
+				this.pageBlurb = 'Useful reading lists and shelf locations for courses';
+
+				this.breadcrumbFactory('<li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/hp\"><i class=\"fa fa-home fa-fw\"><\/i><\/a><\/li><li class=\"-ccp-breadcrumb-item\">Reading lists<\/li>');
+				this.pageFactory('<div class=\"-ccp-ql-wrapper\"><div class=\"-ccp-ql-container\"><h4 class=\"-ccp-heading-u -ccp-heading-u-text1\">Related pages<\/h4><ul><li>&nbsp;<\/li><\/ul><\/div><\/div><div id=\"-ccp-page-region\" class=\"col-md-12\" role=\"main\"><section class=\"-ccp-cloudy-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-hue2\">What are reading lists?<\/h2><p>At a foundation level, you may feel that reading isn\'t something you yet need to worry about, however, many courses at this level still feature useful reading lists that can help you get the grade you need. Take a look at the lists below and choose your course to get started!<\/p><\/div><\/div><\/section><section class=\"-ccp-white-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-hue2\">Search for your course<\/h2><div class=\"-ccp-searchform-container\"><div class=\"-ccp-searchform\"><div class=\"-ccp-searchform-inner\"><input type=\"text\" title=\"Type search term\" placeholder=\"Search for course name, course code...\" id=\"-ccp-ajaxsearch-input\" class=\"-ccp-searchform-input -ccp-w-100\"\/><\/div><\/form><\/div><\/div><p>Hint: To see all results, type \'*\'<\/p><\/div><\/section><section id=\"-ccp-ajaxsearch-results\" class=\"-ccp-hue1-section\" style=\"display:none\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-text1\">Search results<\/h2><div id=\"-ccp-ajaxsearch-noresults\" style=\"display:none\"><h3 style=\"font-weight:normal\">No results! Try another search term<\/h3><\/div><div id=\"-ccp-ajaxsearch-list\"><a href=\"#!\/reading-lists\/aem\/math\" class=\"-ccp-card-link\" style=\"display:none\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Functional Skills in Mathematics<\/h3><\/div><\/div><\/a><a href=\"#!\/reading-lists\/aem\/eng\" class=\"-ccp-card-link\" style=\"display:none\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Functional Skills in English<\/h3><\/div><\/div><\/a><\/div><\/div><\/div><\/div><\/section><section class=\"-ccp-hue2-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><div class=\"-ccp-grid-container -ccp-margin-y-1\"><div class=\"-ccp-grid-25\"><p>&nbsp;<\/p><\/div><div class=\"-ccp-grid-25\"><a href=\"#!\/study-skills\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Study Skills &amp; IT Skills<\/h3><p>If you feel lost with your studies, consider booking a study or IT skills session with one of our tutor librarians or IT technicians.<\/p><\/div><\/div><\/a><\/div><div class=\"-ccp-grid-25\"><a href=\"#!\/resource-booker\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Book a resource or space<\/h3><p>Click here to access our resource booking wizard, which will step you through how to book a resource with us.<\/p><\/div><\/div><\/a><\/div><div class=\"-ccp-grid-25\"><p>&nbsp;<\/p><\/div><\/div><\/div><\/div><\/section><\/div>');
+
+				$("#-ccp-ajaxsearch-input").on("input", function() {
+					// vars
+					var clock = 0;
+					var filter = $(this).val().toUpperCase();
+					var container = document.getElementById('-ccp-ajaxsearch-results');
+					var noResults = document.getElementById('-ccp-ajaxsearch-noresults');
+					var inner = document.getElementById('-ccp-ajaxsearch-list');
+					var list = inner.getElementsByTagName('a');
+			
+					// hide everything unless input is
+					if($(this).val() == '') container.style.display = 'none';
+					else container.style.display = '';
+			
+					// do search
+					if(filter == '*') {
+						for (var i = 0; i < list.length; i++) {
+							noResults.style.display = 'none';
+							list[i].style.display = "";
+						}
+					} else {
+						for (var i = 0; i < list.length; i++) {
+							// vars
+							var h3 = list[i].getElementsByTagName("h3")[0];
+							var txtValue = h3.textContent || h3.innerText;
+			
+							if (txtValue.toUpperCase().indexOf(filter) > -1) {
+								list[i].style.display = "";
+								clock++;
+							} else {
+								list[i].style.display = "none";
+							}
+			
+							// show/hide noresults
+							if(clock < 1) noResults.style.display = '';
+							else noResults.style.display = 'none';
+						}
+					}
+					
+				});
+
+			} else if(this.cd == '#!/reading-lists/aem/eng') {
+				//
+				// reading-lists
+
+				this.pageTitle = 'Reading lists &raquo; Functional Skills in English';
+				this.pageHeadline= 'Reading lists';
+				this.pageBlurb = 'Useful reading lists and shelf locations for Functional Skills in English';
+
+				this.breadcrumbFactory('<li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/hp\"><i class=\"fa fa-home fa-fw\"><\/i><\/a><\/li><li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/reading-lists\">Reading lists<\/a><\/li><li class=\"-ccp-breadcrumb-item\">Functional Skills in English<\/li>');
+				this.pageFactory('<div class=\"-ccp-ql-wrapper\"><div class=\"-ccp-ql-container\"><h4 class=\"-ccp-heading-u -ccp-heading-u-text1\">Related pages<\/h4><ul><li>&nbsp;<\/li><\/ul><\/div><\/div><div id=\"-ccp-page-region\" class=\"col-md-12\" role=\"main\"><section class=\"-ccp-cloudy-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-hue2\">About your course<\/h2><p>Functional Skills in English convers the fundamental literacy, language, and communcation skills required to progress both in life and the world of work.<\/p><\/div><\/div><\/section><section class=\"-ccp-white-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-hue2\">Your reading list<\/h2><table class=\"table table-bordered table-striped\"><thead><tr role=\"row\"><th>Title<\/th><th>Item type<\/th><th>Call number<\/th><th>Link<\/th><\/tr><\/thead><tbody><tr class=\"odd\"><td>1960 Pontiac heating, ventilation, and air conditioning shop manual.<\/td><td>Physical book &amp; eBook<\/td><td>629.2\/77<\/td><td><a href=\"\/cgi-bin\/koha\/opac-detail.pl?biblionumber=2\">View record &raquo;<\/a><\/td><\/tr><\/tbody><\/table><\/div><\/div><\/section><section class=\"-ccp-white-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2 class=\"-ccp-heading-u -ccp-heading-u-hue2\">Call numbers to search<\/h2><table class=\"table table-bordered table-striped\"><thead><tr role=\"row\"><th>Subject<\/th><th>Call number<\/th><th>Description<\/th><\/tr><\/thead><tbody><tr class=\"odd\"><td>English revision guides<\/td><td>428<\/td><td>Functional Skills English revision guides, including CGP Edexcel and IELTS.<\/td><\/tr><\/tbody><\/table><a href=\"#!\/how-tos\/what-is-ddc\" class=\"btn btn-primary\">What is Dewy Decimal?<\/a><\/div><\/div><\/section><section class=\"-ccp-hue2-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><div class=\"-ccp-grid-container -ccp-margin-y-1\"><div class=\"-ccp-grid-25\"><p>&nbsp;<\/p><\/div><div class=\"-ccp-grid-25\"><a href=\"#!\/study-skills\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Study Skills &amp; IT Skills<\/h3><p>If you feel lost with your studies, consider booking a study or IT skills session with one of our tutor librarians or IT technicians.<\/p><\/div><\/div><\/a><\/div><div class=\"-ccp-grid-25\"><a href=\"#!\/resource-booker\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Book a resource or space<\/h3><p>Click here to access our resource booking wizard, which will step you through how to book a resource with us.<\/p><\/div><\/div><\/a><\/div><div class=\"-ccp-grid-25\"><p>&nbsp;<\/p><\/div><\/div><\/div><\/div><\/section><\/div>');
+
 			} else {
 				//
 				// 404 page
