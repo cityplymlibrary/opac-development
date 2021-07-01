@@ -54,6 +54,11 @@
 	}
 }
 
+#opac-main #opac-main-search,
+#advsearch #opac-main-search {
+	display: none
+}
+
 .mastheadsearch {
 	margin: 0;
 	padding: 1rem;

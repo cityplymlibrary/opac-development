@@ -1,8 +1,7 @@
 // sco user js, jake deery on behalf of city college plymouth, 2021
 document.addEventListener("DOMContentLoaded", function(event) { 
 	// engineer the page
-	$('#sco_main .navbar-inverse').html('<div class=\"navbar-inner\"><div class=\"container-fluid\"><ul class=\"nav pull-right\"><li><a href=\"\/cgi-bin\/koha\/sco\/help.pl\"><i class=\"fa fa-info-circle\"><\/i> Help<\/a><\/li><\/ul><\/div><\/div>'); // inject nav
-	$('#opacheader').html('<h1 class=\"-ccp-heading-u -ccp-heading-u-hue2\">City College Plymouth Library<\/h1>'); // inject header
+	$('.navbar-inverse').remove(); // remove
 
 	// finish the details
 	$('#masthead').find('h1').text('Library Self-service systems'); // set title
@@ -19,8 +18,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if($('#sco_help').length) {
 		$('.main .row-fluid').html('<div class=\"row-fluid\"><h1>Self checkout help<\/h1><p>If this is your first time using the self checkout system, or if the system is not behaving as expected, you may want to refer to this guide to get yourself started.<\/p><h3>Step one<\/h3><p>Please scan your student ID card. If you do not have one, please visit the Library counter.<\/p><h3>Step two<\/h3><p>Scan each item and wait for the page to reload before scanning the next item. The checked-out item should appear in your checkouts list.<\/p><h3>Step three<\/h3><p>If you do not click the \'Finish\' button, your session will automatically expire in 90 seconds.<\/p><a class=\"btn btn-primary\" href=\"javascript:history.go(-1)\">Return to the self-checkout<\/a> <\/div>');
 	}
-
-	// tidy up
-	$('#sco_help .navbar-inverse').remove();
-	$('style').first().remove(); // remove ptfs css
 });
