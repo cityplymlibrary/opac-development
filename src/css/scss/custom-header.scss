@@ -47,46 +47,44 @@
 // search box
 #opac-main-search {
 	margin: 0;
-	padding: 0;
+	padding: 1rem;
+	background-color: $ccpHue1;
 
 	label {
-		color: $ccpWhite
+		color: $ccpText1
 	}
-}
-
-#opac-main #opac-main-search,
-#advsearch #opac-main-search {
-	display: none
-}
-
-.mastheadsearch {
-	margin: 0;
-	padding: 1rem;
-	box-shadow: 0 .25rem .25rem 0 rgba(0, 0, 0, .33);
-	background-color: $ccpHue1
 }
 
 #moresearches {
 	margin: 0;
-	padding: 1rem;
+	padding: 0 1rem;
 	background-color: $ccpWhite;
-	color: $msCharcoal
-}
+	color: $msCharcoal;
 
-#moresearches li:last-child {
-	&::after {
-		content: none
+	ul {
+		padding: 1rem
+	}
+	
+	li:last-child {
+		&::after {
+			content: none
+		}
+	}
+
+	li {
+		&::before {
+			content: none
+		}
+
+		&::after {
+			content: " | "
+		}
 	}
 }
 
-#moresearches li {
-	&::before {
-		content: none
-	}
-
-	&::after {
-		content: " | "
-	}
+#opac-main #opac-main-search, #opac-main #moresearches,
+#advsearch #opac-main-search, #advsearch #moresearches {
+	display: none
 }
 
 //

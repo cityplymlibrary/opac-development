@@ -223,14 +223,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	//
 	// main site logic (MAIN FUNC)
 
-	// initialise site
-	const miniSpa = new miniSpaCls;
+	if(window.location.hostname == 'ccp-koha.aka-ish.ga') {
+		// initialise site
+		const miniSpa = new miniSpaCls;
 
-	// render the page initially
-	miniSpa.renderPage();
-	// then listen for changes in the url
-	window.addEventListener('popstate', function(event) {
+		// render the page initially
 		miniSpa.renderPage();
-	});
+		// then listen for changes in the url
+		window.addEventListener('popstate', function(event) {
+			miniSpa.renderPage();
+		});
+	}
 
 });

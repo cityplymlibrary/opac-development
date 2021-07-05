@@ -28,6 +28,14 @@
 
 //
 //
+// adv search
+#advsearch_limits label, #subtypes label,
+.hint {
+	color: $ccpBlack
+}
+
+//
+//
 // search results
 #numresults, #selections {
 	color: $ccpBlack
@@ -35,7 +43,7 @@
 
 .pagination ul > li {
 	&::before {
-		display: none
+		content: none
 	}
 }
 
@@ -59,6 +67,7 @@
 	a {
 		background-color: $ccpWhite;
 		color: $ccpBlack;
+		text-decoration: none;
 		border-bottom: 1px solid darken($ccpWhite, 33%);
 		border-right: 1px solid darken($ccpWhite, 33%)
 	}
@@ -164,6 +173,24 @@
 	border-color: transparent;
 	border-radius: .33rem;
 
+	li {
+		&::before {
+			content: none
+		}
+	}
+}
+
+.nav_pages, .pagination_list {
+	li {
+		&::before {
+			content: none
+		}
+	}
+}
+
+//
+// holds
+.hold-options {
 	li {
 		&::before {
 			content: none

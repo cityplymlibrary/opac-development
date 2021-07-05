@@ -25,16 +25,17 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 
 //
 // navbar
-.navbar-inverse .navbar-inner {
+.navbar-expand {
 	background-color: $ccpBlack;
 	padding: .5rem 1rem;
 	border: none
 }
 
-.navbar-inverse .nav {
+#cart-list-nav, #members {
 	li {
 		a {
 			color: lighten($ccpBlack, 85%);
+			text-decoration: none;
 			text-shadow: none;
 
 			i.fa {
@@ -50,57 +51,49 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 				}
 			}
 		}
-	}
 
-	// dropdown carets
-	li.dropdown > .dropdown-toggle b.caret {
-		border-top-color: lighten($ccpBlack, 85%);
-		border-bottom-color: lighten($ccpBlack, 85%)
-	}
-
-	li.dropdown.open > .dropdown-toggle b.caret,
-	li.dropdown > a:hover b.caret,
-	li.dropdown > a:focus b.caret,
-	li.dropdown > a:active b.caret {
-		border-top-color: lighten($ccpBlack, 55%);
-		border-bottom-color: lighten($ccpBlack, 55%)
-	}
-
-	li.dropdown.open > .dropdown-toggle .caret {
-		&:hover, &:focus,
-		&:active &.active {
-			border-top-color: lighten($ccpBlack, 55%);
-			border-bottom-color: lighten($ccpBlack, 55%)
+		&::before {
+			content: none
 		}
 	}
 
-	// open dropdowns
-	li.dropdown.open > .dropdown-toggle {
-		&:hover, &:focus,
-		&:active &.active {
-			color: lighten($ccpBlack, 55%)
-		}
+	.divider-vertical, .clearsh {
+		display: none
 	}
 }
 
-// members account & logout
-.navbar-inverse .navbar-inner #members ul.dropdown-menu a {
-	color: $msBlue;
+#loggedinuser-menu p {
+	a {
+		color: $msBlue;
 	
-	&:hover, &:focus {
-		color: darken($msBlue, 33%);
-		text-decoration: none
+		&:link, &:visited {
+			color: $msBlue
+		}
+	
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msBlue, 33%)
+		}
 	}
 }
 
-.navbar-inverse .navbar-inner #members ul.dropdown-menu a.logout {
-	color: $msRed
+#loggedinuser-menu > p:nth-child(2) {
+	display: none
 }
 
-.navbar-inverse .navbar-inner #members ul.dropdown-menu a:hover.logout:hover,
-.navbar-inverse .navbar-inner #members ul.dropdown-menu a:focus.logout:focus {
-	color: darken($msRed, 33%);
-	text-decoration: none
+#members {
+	a.logout {
+		color: $msRed;
+		
+		&:link, &:visited {
+			color: $msRed
+		}
+		
+		&:hover, &:focus,
+		&:active, &.active {
+			color: darken($msRed, 33%)
+		}
+	}
 }
 
 .navbar .nav > li {
