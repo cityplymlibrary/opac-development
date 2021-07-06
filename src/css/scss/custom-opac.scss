@@ -41,6 +41,20 @@
 	color: $ccpBlack
 }
 
+.shelves {
+	ul {
+		padding-left: 0
+	}
+}
+
+.shelves, .tags {
+	li {
+		&::before {
+			content: none
+		}
+	}
+}
+
 .pagination ul > li {
 	&::before {
 		content: none
