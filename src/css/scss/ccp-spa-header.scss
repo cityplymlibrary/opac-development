@@ -110,11 +110,11 @@
 	}
 
 	&:first-child::before {
-		content: "";
+		content: '';
 		display: none
 	}
 
 	&:not(:first-child)::before {
-		content: "\00a0\00bb\00a0"
+		content: '\00a0\00bb\00a0'
 	}
 }

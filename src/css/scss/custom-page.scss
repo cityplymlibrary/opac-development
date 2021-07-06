@@ -21,12 +21,18 @@
 	border-radius: .33rem
 }
 
-.breadcrumb > li {
-	&:before {
+.breadcrumb-item {
+	&::before {
 		content: none
 	}
+}
 
-	text-shadow: none
+.breadcrumb-item + .breadcrumb-item {
+	&::before {
+		content: '\00BB';
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 //
@@ -162,7 +168,7 @@ legend, .legend {
 }
 
 legend::after, .legend::after {
-	content: "";
+	content: '';
 	display: block;
 	max-width: 33%;
 	border-bottom: .25rem solid darken($ccpWhite, 33%);
