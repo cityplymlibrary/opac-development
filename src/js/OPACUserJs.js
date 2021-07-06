@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	$('#translControl1').attr('placeholder', 'Search for books, eBooks, journal articles, DVDs...');
 
 	// moresearches
-	$('#moresearches').html('<ul><li><a href=\"\/cgi-bin\/koha\/opac-search.pl\">Advanced search<\/a><\/li><\/ul>');
+	$('#moresearches').html('<li class=\"nav-item\"><a href=\"\/cgi-bin\/koha\/opac-search.pl\">Advanced search<\/a><\/li>');
 
 	// login page
 	if($('#auth').length > 0 && $('#opac-auth').children('h4').eq(1).length > 0) {

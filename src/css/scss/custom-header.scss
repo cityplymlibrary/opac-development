@@ -56,14 +56,10 @@
 }
 
 #moresearches {
-	margin: 0;
-	padding: 0 1rem;
+	margin: 0 1rem;
+	padding: 1rem;
 	background-color: $ccpWhite;
 	color: $msCharcoal;
-
-	ul {
-		padding: 1rem
-	}
 	
 	li:last-child {
 		&::after {
