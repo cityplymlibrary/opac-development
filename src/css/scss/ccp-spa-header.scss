@@ -38,7 +38,7 @@
 	width: 100%;
 	min-width: 0;
 	max-width: 100%;
-	background-color: darken($ccpHue1, 15%);
+	background-color: $ccpHue2;
 	
 	@media(min-width: $breakpoint-pc) {
 		position: absolute;
@@ -50,18 +50,18 @@
 
 	h3, h4, h5,
 	.h3, .h4, .h5 {
-		color: $ccpText1
+		color: $ccpText2
 	}
 
 	ul li::before {
-		color: $ccpText1
+		color: $ccpText2
 	}
 
 	ul li a {
-		color: $ccpText1;
+		color: $ccpText2;
 
 		&:hover, &:focus {
-			color: darken($ccpText1, 33%);
+			color: lighten($ccpText2, 15%);
 		}
 	}
 }
@@ -88,7 +88,7 @@
 //
 // breadcrumbs
 .-ccp-breadcrumb-inner {
-	margin: 1rem 0;
+	padding: 0;
 	list-style: none
 }
 

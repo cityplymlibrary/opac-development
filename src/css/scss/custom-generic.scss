@@ -38,17 +38,17 @@ h4, h5, h6,
 }
 
 a {
-	color: $msBlue;
+	color: $msRed;
 	text-decoration: underline;
 
 	&:link, &:visited {
-		color: $msBlue;
+		color: $msRed;
 		text-decoration: underline
 	}
 
 	&:hover, &:focus,
 	&:active, &.active {
-		color: darken($msBlue, 33%);
+		color: darken($msRed, 33%);
 		text-decoration: none
 	}
 }
@@ -142,7 +142,7 @@ hr {
 	text-shadow: none;
 	text-decoration: none!important;
 
-	color: $ccpText3!important;
+	color: $ccpWhite!important;
 	background-color: $ccpHue3!important;
 	border: 1px solid $ccpText3!important;
 	
@@ -154,8 +154,8 @@ hr {
 		text-decoration: none!important;
 
 		color: $ccpWhite!important;
-		background-color: darken($ccpHue3, 33%)!important;
-		border: 1px solid darken($ccpHue3, 11%)!important;
+		background-color: $ccpBlack!important;
+		border: 1px solid darken($ccpHue3, 55%)!important;
 		box-shadow: 0 0 0 1px $ccpHue3!important
 	}
 }
@@ -248,9 +248,9 @@ hr {
 .show {
 	.btn-primary.dropdown-toggle {
 		background-image: none;
-		background-color: $ccpHue3;
-		border-color: $ccpHue3;
-		box-shadow: 0 0 0 1px $ccpHue3
+		background-color: $ccpHue2;
+		border-color: $ccpHue2;
+		box-shadow: 0 0 0 1px $ccpHue2
 	}
 }
 
@@ -281,14 +281,14 @@ input[type="search"], select, textarea,
 		text-shadow: none;
 		
 		border: 1px solid $ccpWhite, 66%;
-		box-shadow: 0 0 0 1px darken($ccpHue3, 33%)
+		box-shadow: 0 0 0 1px darken($ccpHue2, 33%)
 	}
 
 	&:focus {
 		background-image: none;
 		text-shadow: none;
 		
-		border: 1px solid $ccpHue3;
-		box-shadow: 0 0 0 1px lighten($ccpHue3, 33%)
+		border: 1px solid $ccpHue2;
+		box-shadow: 0 0 0 1px lighten($ccpHue2, 33%)
 	}
 }

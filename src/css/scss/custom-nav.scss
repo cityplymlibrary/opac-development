@@ -64,15 +64,15 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 
 #loggedinuser-menu p {
 	a {
-		color: $msBlue;
+		color: $msRed;
 	
 		&:link, &:visited {
-			color: $msBlue
+			color: $msRed
 		}
 	
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msBlue, 33%)
+			color: darken($msRed, 33%)
 		}
 	}
 }

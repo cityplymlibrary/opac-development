@@ -267,7 +267,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($ccpText1, 33%)
+			color: lighten($ccpText1, 15%)
 		}
 	}
 		
@@ -295,7 +295,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($ccpText2, 33%)
+			color: lighten($ccpText2, 15%)
 		}
 	}
 	
@@ -323,7 +323,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($ccpText3, 33%)
+			color: darken($ccpText3, 15%)
 		}
 	}
 	
@@ -473,7 +473,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: $msBlue
+			color: $msRed
 		}
 	}
 		
@@ -506,7 +506,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			color: $msBlue
+			color: $msRed
 		}
 	}
 		
@@ -663,11 +663,11 @@
 	}
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpText3
+		color: $ccpText1
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpText3;
+		color: $ccpText1;
 
 		&:hover, &:focus,
 		&:active, &.active {

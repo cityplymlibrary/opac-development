@@ -25,13 +25,13 @@ $msMagenta: rgba(135,68,125,1);
 $ccpBlack: rgba(35,31,32,1); // black
 $ccpWhite: rgba(242,242,242,1); // white
 
-$ccpHue1: rgba(34,87,122,1); // hue1
-$ccpHue2: rgba(56,163,165,1); // hue2
-$ccpHue3: rgba(87,204,153,1); // hue3
+$ccpHue1: rgba(227,104,17,1); // hue1
+$ccpHue2: rgba(237,158,103,1); // hue2
+$ccpHue3: rgba(85,86,86,1); // hue3
 
-$ccpText1: lighten($ccpHue1, 65%); // text for hue1
-$ccpText2: darken($ccpHue2, 45%); // text for hue2
-$ccpText3: darken($ccpHue3, 45%); // text for hue3
+$ccpText1: lighten($ccpHue1, 50%); // text for hue1
+$ccpText2: darken($ccpHue2, 50%); // text for hue2
+$ccpText3: lighten($ccpHue3, 50%); // text for hue3
 
 
 $breakpoint-pc: 992px;

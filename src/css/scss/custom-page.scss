@@ -66,7 +66,7 @@
 .ui-widget-content, .ui-tabs .ui-state-default {
 	a, a:link,
 	a:visited {
-		color: $msBlue
+		color: $msRed
 	}
 }
 
@@ -146,7 +146,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			background-color: $msBlue;
+			background-color: $msRed;
 			color: $ccpWhite
 		}
 	}
@@ -155,7 +155,7 @@
 #menu li.active a {
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $msBlue;
+		background-color: $msRed;
 		color: $ccpWhite
 	}
 }

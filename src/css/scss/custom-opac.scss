@@ -166,17 +166,17 @@
 	}
 
 	a {
-		color: $msBlue;
+		color: $msRed;
 
 		i.fa {
-			color: $msBlue
+			color: $msRed
 		}
 
 		&:hover, &:focus {
-			color: darken($msBlue, 33%);
+			color: darken($msRed, 33%);
 			
 			i.fa {
-			color: darken($msBlue, 33%)
+			color: darken($msRed, 33%)
 			}
 		}
 	}
