@@ -157,6 +157,10 @@
 	width: 100%!important
 }
 
+.-ccp-w-50 {
+	width: 50%!important
+}
+
 .-ccp-w-33 {
 	width: 33.3%!important
 }
@@ -169,6 +173,10 @@
 	height: 100%!important
 }
 
+.-ccp-h-50 {
+	height: 50%!important
+}
+
 .-ccp-h-33 {
 	height: 33.3%!important
 }
@@ -177,41 +185,42 @@
 	height: 25%!important
 }
 
+.-ccp-r-100 {
+	border-radius: 1rem!important
+}
+
+.-ccp-r-50 {
+	border-radius: .5rem!important
+}
+
 .-ccp-r-33 {
-	border-radius: .33rem
+	border-radius: .33rem!important
+}
+
+.-ccp-r-25 {
+	border-radius: .25rem!important
 }
 
 //
 // margins & paddings
-.-ccp-margin-sm {
-	margin: .5rem!important
-}
-
-.-ccp-margin-1 {
-	margin: 1rem!important
-}
-
-.-ccp-margin-md {
-	margin: 2rem!important
-}
-
 .-ccp-margin-lg {
 	margin: 3rem!important
 }
 
-.-ccp-margin-x-sm {
-	margin-right: .5rem!important;
-	margin-left: .5rem!important
+.-ccp-margin-t-lg {
+	margin-top: 3rem!important
 }
 
-.-ccp-margin-x-1 {
-	margin-right: 1rem!important;
-	margin-left: 1rem!important
+.-ccp-margin-r-lg {
+	margin-right: 3rem!important
 }
 
-.-ccp-margin-x-md {
-	margin-right: 2rem!important;
-	margin-left: 2rem!important
+.-ccp-margin-b-lg {
+	margin-bottom: 3rem!important
+}
+
+.-ccp-margin-l-lg {
+	margin-left: 3rem!important
 }
 
 .-ccp-margin-x-lg {
@@ -219,14 +228,34 @@
 	margin-left: 3rem!important
 }
 
-.-ccp-margin-y-sm {
-	margin-top: .5rem!important;
-	margin-bottom: .5rem!important
+.-ccp-margin-y-lg {
+	margin-top: 3rem!important;
+	margin-bottom: 3rem!important
 }
 
-.-ccp-margin-y-1 {
-	margin-top: 1rem!important;
-	margin-bottom: 1rem!important
+.-ccp-margin-md {
+	margin: 2rem!important
+}
+
+.-ccp-margin-t-md {
+	margin-top: 2rem!important
+}
+
+.-ccp-margin-r-md {
+	margin-right: 2rem!important
+}
+
+.-ccp-margin-b-md {
+	margin-bottom: 2rem!important
+}
+
+.-ccp-margin-l-md {
+	margin-left: 2rem!important
+}
+
+.-ccp-margin-x-md {
+	margin-right: 2rem!important;
+	margin-left: 2rem!important
 }
 
 .-ccp-margin-y-md {
@@ -234,48 +263,114 @@
 	margin-bottom: 2rem!important
 }
 
-.-ccp-margin-y-lg {
-	margin-top: 3rem!important;
-	margin-bottom: 3rem!important
+.-ccp-margin-sm {
+	margin: .5rem!important
+}
+
+.-ccp-margin-t-sm {
+	margin-top: .5rem!important
+}
+
+.-ccp-margin-r-sm {
+	margin-right: .5rem!important
+}
+
+.-ccp-margin-b-sm {
+	margin-bottom: .5rem!important
+}
+
+.-ccp-margin-l-sm {
+	margin-left: .5rem!important
+}
+
+.-ccp-margin-x-sm {
+	margin-right: .5rem!important;
+	margin-left: .5rem!important
+}
+
+.-ccp-margin-y-sm {
+	margin-top: .5rem!important;
+	margin-bottom: .5rem!important
+}
+
+.-ccp-margin-1 {
+	margin: 1rem!important
+}
+
+.-ccp-margin-t-1 {
+	margin-top: 1rem!important
+}
+
+.-ccp-margin-r-1 {
+	margin-right: 1rem!important
+}
+
+.-ccp-margin-b-1 {
+	margin-bottom: 1rem!important
+}
+
+.-ccp-margin-l-1 {
+	margin-left: 1rem!important
+}
+
+.-ccp-margin-x-1 {
+	margin-right: 1rem!important;
+	margin-left: 1rem!important
+}
+
+.-ccp-margin-y-1 {
+	margin-top: 1rem!important;
+	margin-bottom: 1rem!important
+}
+
+.-ccp-margin-0 {
+	margin: 0!important
 }
 
 .-ccp-margin-t-0 {
 	margin-top: 0!important
 }
 
+.-ccp-margin-r-0 {
+	margin-right: 0!important
+}
+
 .-ccp-margin-b-0 {
 	margin-bottom: 0!important
 }
 
-.-ccp-padding-sm {
-	padding: .5rem!important
+.-ccp-margin-l-0 {
+	margin-left: 0!important
 }
 
-.-ccp-padding-1 {
-	padding: 1rem!important
+.-ccp-margin-x-0 {
+	margin-right: 0!important;
+	margin-left: 0!important
 }
 
-.-ccp-padding-md {
-	padding: 2rem!important
+.-ccp-margin-y-0 {
+	margin-top: 0!important;
+	margin-bottom: 0!important
 }
 
 .-ccp-padding-lg {
 	padding: 3rem!important
 }
 
-.-ccp-padding-x-sm {
-	padding-right: .5rem!important;
-	padding-left: .5rem!important
+.-ccp-padding-t-lg {
+	padding-top: 3rem!important
 }
 
-.-ccp-padding-x-1 {
-	padding-right: 1rem!important;
-	padding-left: 1rem!important
+.-ccp-padding-r-lg {
+	padding-right: 3rem!important
 }
 
-.-ccp-padding-x-md {
-	padding-right: 2rem!important;
-	padding-left: 2rem!important
+.-ccp-padding-b-lg {
+	padding-bottom: 3rem!important
+}
+
+.-ccp-padding-l-lg {
+	padding-left: 3rem!important
 }
 
 .-ccp-padding-x-lg {
@@ -283,14 +378,34 @@
 	padding-left: 3rem!important
 }
 
-.-ccp-padding-y-sm {
-	padding-top: .5rem!important;
-	padding-bottom: .5rem!important
+.-ccp-padding-y-lg {
+	padding-top: 3rem!important;
+	padding-bottom: 3rem!important
 }
 
-.-ccp-padding-y-1 {
-	padding-top: 1rem!important;
-	padding-bottom: 1rem!important
+.-ccp-padding-md {
+	padding: 2rem!important
+}
+
+.-ccp-padding-t-md {
+	padding-top: 2rem!important
+}
+
+.-ccp-padding-r-md {
+	padding-right: 2rem!important
+}
+
+.-ccp-padding-b-md {
+	padding-bottom: 2rem!important
+}
+
+.-ccp-padding-l-md {
+	padding-left: 2rem!important
+}
+
+.-ccp-padding-x-md {
+	padding-right: 2rem!important;
+	padding-left: 2rem!important
 }
 
 .-ccp-padding-y-md {
@@ -298,16 +413,93 @@
 	padding-bottom: 2rem!important
 }
 
-.-ccp-padding-y-lg {
-	padding-top: 3rem!important;
-	padding-bottom: 3rem!important
+.-ccp-padding-sm {
+	padding: .5rem!important
+}
+
+.-ccp-padding-t-sm {
+	padding-top: .5rem!important
+}
+
+.-ccp-padding-r-sm {
+	padding-right: .5rem!important
+}
+
+.-ccp-padding-b-sm {
+	padding-bottom: .5rem!important
+}
+
+.-ccp-padding-l-sm {
+	padding-left: .5rem!important
+}
+
+.-ccp-padding-x-sm {
+	padding-right: .5rem!important;
+	padding-left: .5rem!important
+}
+
+.-ccp-padding-y-sm {
+	padding-top: .5rem!important;
+	padding-bottom: .5rem!important
+}
+
+.-ccp-padding-1 {
+	padding: 1rem!important
+}
+
+.-ccp-padding-t-1 {
+	padding-top: 1rem!important
+}
+
+.-ccp-padding-r-1 {
+	padding-right: 1rem!important
+}
+
+.-ccp-padding-b-1 {
+	padding-bottom: 1rem!important
+}
+
+.-ccp-padding-l-1 {
+	padding-left: 1rem!important
+}
+
+.-ccp-padding-x-1 {
+	padding-right: 1rem!important;
+	padding-left: 1rem!important
+}
+
+.-ccp-padding-y-1 {
+	padding-top: 1rem!important;
+	padding-bottom: 1rem!important
+}
+
+.-ccp-padding-0 {
+	padding: 0!important
 }
 
 .-ccp-padding-t-0 {
 	padding-top: 0!important
 }
 
+.-ccp-padding-r-0 {
+	padding-right: 0!important
+}
+
 .-ccp-padding-b-0 {
+	padding-bottom: 0!important
+}
+
+.-ccp-padding-l-0 {
+	padding-left: 0!important
+}
+
+.-ccp-padding-x-0 {
+	padding-right: 0!important;
+	padding-left: 0!important
+}
+
+.-ccp-padding-y-0 {
+	padding-top: 0!important;
 	padding-bottom: 0!important
 }
 
