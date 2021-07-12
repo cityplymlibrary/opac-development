@@ -19,7 +19,7 @@ body::after {
 	height: 0;
 	overflow: hidden;
 	z-index: -1;
-	content: url('/cgi-bin/koha/opac-image.pl?imagenumber=328') url('//ccp.koha-ptfs.co.uk/cgi-bin/koha/opac-image.pl?imagenumber=327')
+	content: url('//res.cloudinary.com/cityplymjdeery/image/upload/v1626118634/bitmaps/styling/koha-white-logo_ws22zr.png') url('//res.cloudinary.com/cityplymjdeery/image/upload/v1626118634/bitmaps/styling/koha-cloudy-logo_gmcdce.png')
 }
 
 //

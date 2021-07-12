@@ -8,10 +8,10 @@
 // logo
 #logo {
 	display: none;
-	background: transparent url('/cgi-bin/koha/opac-image.pl?imagenumber=327') no-repeat left center;
+	background: transparent url('//res.cloudinary.com/cityplymjdeery/image/upload/v1626118634/bitmaps/styling/koha-white-logo_ws22zr.png') no-repeat left center;
 
 	&:hover, &:focus {
-		background: transparent url('/cgi-bin/koha/opac-image.pl?imagenumber=328') no-repeat left center
+		background: transparent url('//res.cloudinary.com/cityplymjdeery/image/upload/v1626118634/bitmaps/styling/koha-cloudy-logo_gmcdce.png') no-repeat left center
 	}
 
 	@media(min-width: $breakpoint-pc) {
