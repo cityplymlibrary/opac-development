@@ -1,0 +1,7 @@
+// ccp-spa-after.scss, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
+
+//
+// overrides
+.-ccp-page-title.-ccp-heading-u::after {
+	border-bottom: .25rem solid $ccpHue1!important
+}

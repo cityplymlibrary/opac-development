@@ -39,6 +39,10 @@
 	min-width: 0;
 	max-width: 100%;
 	background-color: $ccpHue2;
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpText2
+	}
 	
 	@media(min-width: $breakpoint-pc) {
 		position: absolute;

@@ -291,6 +291,10 @@
 	.h4, .h5, .h6 {
 		color: $ccpBlack
 	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpHue1
+	}
 }
 
 .-ccp-black-section {
@@ -318,6 +322,10 @@
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
 		color: $ccpWhite
+	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpWhite
 	}
 }
 
@@ -347,6 +355,10 @@
 	.h4, .h5, .h6 {
 		color: $ccpBlack
 	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpHue2
+	}
 }
 
 .-ccp-charcoal-section {
@@ -374,6 +386,10 @@
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
 		color: $ccpWhite
+	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpWhite
 	}
 }
 
@@ -403,6 +419,10 @@
 	.h4, .h5, .h6 {
 		color: $ccpWhite
 	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpWhite
+	}
 }
 
 .-ccp-alert-section {
@@ -430,6 +450,10 @@
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
 		color: $ccpBlack
+	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpBlack
 	}
 }
 
@@ -459,6 +483,10 @@
 	.h4, .h5, .h6 {
 		color: $ccpText1
 	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpText1
+	}
 }
 
 .-ccp-hue2-section {
@@ -487,6 +515,10 @@
 	.h4, .h5, .h6 {
 		color: $ccpText2
 	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpText2
+	}
 }
 
 .-ccp-hue3-section {
@@ -514,6 +546,10 @@
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
 		color: $ccpText3
+	}
+
+	.-ccp-heading-u::after {
+		border-bottom: .25rem solid $ccpText3
 	}
 }
 

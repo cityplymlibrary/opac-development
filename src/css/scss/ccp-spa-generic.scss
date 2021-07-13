@@ -99,56 +99,7 @@
 	content: '';
 	display: block;
 	max-width: 33.3%;
-	border-bottom: .25rem solid transparent;
 	border-radius: .33rem
-}
-
-.-ccp-heading-u-white::after {
-	border-bottom: .25rem solid $white
-}
-
-.-ccp-heading-u-black::after {
-	border-bottom: .25rem solid $ccpBlack
-}
-
-.-ccp-heading-u-cloudy::after {
-	border-bottom: .25rem solid $ccpWhite
-}
-
-.-ccp-heading-u-charcoal::after {
-	border-bottom: .25rem solid $msCharcoal
-}
-
-.-ccp-heading-u-danger::after {
-	border-bottom: .25rem solid $msRed
-}
-
-.-ccp-heading-u-alert::after {
-	border-bottom: .25rem solid $msGold
-}
-
-.-ccp-heading-u-hue1::after {
-	border-bottom: .25rem solid $ccpHue1
-}
-
-.-ccp-heading-u-hue2::after {
-	border-bottom: .25rem solid $ccpHue2
-}
-
-.-ccp-heading-u-hue3::after {
-	border-bottom: .25rem solid $ccpHue3
-}
-
-.-ccp-heading-u-text1::after {
-	border-bottom: .25rem solid $ccpText1
-}
-
-.-ccp-heading-u-text2::after {
-	border-bottom: .25rem solid $ccpText2
-}
-
-.-ccp-heading-u-text3::after {
-	border-bottom: .25rem solid $ccpText3
 }
 
 //
