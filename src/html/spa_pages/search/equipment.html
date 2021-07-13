@@ -2,76 +2,44 @@
 	<div class="-ccp-ql-container">
 		<h4 class="-ccp-heading-u">Related pages</h4>
 		<ul>
-			<li>
-				<a href="#!/hp">Homepage</a>
-			</li>
-			<li>
-				<a href="javascript:history.go(-1)">Go back a page</a>
-			</li>
+			<li><a href="#!/search">Catalogue search</a></li>
+			<li><a href="#!/search/books">Book search</a></li>
+			<li><a href="#!/search/ereadables">eReadable search</a></li>
 		</ul>
 	</div>
 </div>
 <div id="-ccp-page-region" class="col-md-12" role="main">
-	<section class="-ccp-cloudy-section">
+	<!-- search box - do not edit -->
+	<section class="-ccp-hue1-section">
 		<div class="-ccp-container">
 			<div class="-ccp-inner-lg">
-				<h2>Error 404 - Page not Found</h2>
-				<p>
-					<strong>This message can have the following reason(s):</strong>
-				</p>
-				<ul>
-					<li>
-						You made use of an external link to a catalog item that is no longer available.
-					</li>
-					<li>
-						You followed an outdated link e.g. from a search engine or a bookmark.
-					</li>
-					<li>
-						You tried to access a page that needs authentication.
-					</li>
-					<li>
-						An internal link in our catalog home page is broken and the page does not exist.
-					</li>
-				</ul>
-				<p>
-					<strong>What's next?</strong>
-				</p>
-				<ul>
-					<li>
-						You can use the menu and links at the top of the page
-					</li>
-					<li>
-						You can search our catalog using the search form at the bottom of this page.
-					</li>
-					<li>
-						<a href="#!/hp">Return to the catalog home page.</a>
-					</li>
-				</ul>
-				<p>
-					<strong>Report issues and broken links</strong>
-					<ul>
-						<li>
-							To report this error, please contact the Koha Administrator. <a href="mailto:library&#64;cityplym&#46;ac&#46;uk">Send email.</a>
-						</li>
-					</ul>
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="-ccp-hue3-section">
-		<div class="-ccp-container">
-			<div class="-ccp-inner-lg">
+				<!-- title here -->
 				<h2 class="-ccp-heading-u">Search the catalogue</h2>
+				<!-- DO NOT EDIT BEGIN -->
 				<div class="-ccp-searchform-container">
 					<form class="-ccp-searchform" name="searchform" method="get" action="/cgi-bin/koha/opac-search.pl">
 						<div class="-ccp-searchform-inner">
-							<input type="text" title="Type search term" placeholder="Search for books, eBooks, journal articles, DVDs..." class="-ccp-searchform-input" name="q">
+							<input type="text" title="Type search term" placeholder="Search for cameras, tripods, digital eqipment, accessories..." class="-ccp-searchform-input" name="q">
 							<button type="submit" class="-ccp-searchform-submit btn btn-default"><i class="fa fa-search fa-fw"></i> Go</button>
 							<input type="hidden" title="IDX" name="idx" value="">
+							<input type="hidden" title="LIMIT" name="limit" value="ccode:EQUIP">
 						</div>
 					</form>
 				</div>
 				<p><a href="/cgi-bin/koha/opac-search.pl">Advanced search &raquo;</a></p>
+				<!-- DO NOT EDIT END -->
+			</div>
+		</div>
+	</section>
+	<!-- help with this page-->
+	<section class="-ccp-cloudy-section">
+		<div class="-ccp-container">
+			<div class="-ccp-inner-lg">
+				<!-- title here-->
+				<h2>Help with this page</h2>
+				<!-- text here -->
+				<p>If you'd like to find equipment with us, please use the search box above and enter key words about the item you'd like to search for. For example, if you would like a video camera, try 'camcorder'.</p>
+				<p>If you're looking to refine your search further, you can either use the refinement tools per-search, click 'Advanced search' and limit your searches that way, or, try searching specifically for <a href="#!/search/books">books</a>, <a href="#!/search/ereadables">eBooks &amp; eJournals</a>, or, <a href="#!/search">anything on our catalogue</a>.</p>
 			</div>
 		</div>
 	</section>
