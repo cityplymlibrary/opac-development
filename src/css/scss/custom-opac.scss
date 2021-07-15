@@ -3,6 +3,11 @@
 //
 //
 // opac overrides
+#opac-main .maincontent {
+	max-width: 100%;
+	flex: 0 0 100%
+}
+
 #login,
 #user_summary {
 	display: none

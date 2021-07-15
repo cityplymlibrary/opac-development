@@ -1,17 +1,53 @@
 // ccp-spa-misc.scss, OPAC SPA Project, Jake Deery on behalf of City College Plymouth, 2021
 
-//
-// spa accordeon sections
-#-spa-section-2,
-#-spa-section-3 {
-	display: none
+// credit for embeds: Nicolas Gallagher and SUIT CSS.
+.-ccp-embed {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+
+	&::before {
+		display: block;
+		content: ""
+	}
+
+	.-ccp-embed-item, iframe,
+	embed, object,
+	video {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0
+	}
 }
 
-.-ccp-no-decorations,
-a.-ccp-no-decorations,
-a.-ccp-no-decorations:hover,
-a.-ccp-no-decorations:focus {
-	text-decoration: none!important
+.-ccp-embed-21by9 {
+	&::before {
+		padding-top: percentage(9 / 21)
+	}
+}
+
+.-ccp-embed-16by9 {
+	&::before {
+		padding-top: percentage(9 / 16)
+	}
+}
+
+.-ccp-embed-4by3 {
+	&::before {
+		padding-top: percentage(3 / 4)
+	}
+}
+
+.-ccp-embed-1by1 {
+	&::before {
+		padding-top: percentage(1 / 1)
+	}
 }
 
 //
