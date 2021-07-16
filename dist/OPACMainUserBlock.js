@@ -103,9 +103,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				// homepage
 
 				// update globals
-				this.pageTitle = 'Homepage';
-				this.pageHeadline = 'City College Plymouth Digital Village';
-				this.pageBlurb = '';
+				this.pageTitle = 'Homepage'; // tab/window title
+				this.pageHeadline = 'City College Plymouth Digital Village'; // heading
+				this.pageBlurb = ''; // subheading
 
 				// first, configure the breadcrumbs
 				this.breadcrumbFactory('<li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/hp\"><i class=\"fa fa-home fa-fw\"><\/i><\/a><\/li>');
@@ -134,6 +134,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				this.breadcrumbFactory('<li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/hp\"><i class=\"fa fa-home fa-fw\"><\/i><\/a><\/li>');
 				this.quickLinksFactory('<li><a href=\"#!\/hp\">It works!<\/a><\/li>');
 				this.pageFactory('<div id=\"-ccp-page-region\" class=\"col-md-12\" role=\"main\"><section class=\"-ccp-cloudy-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-lg\"><h2>Congratulations!<\/h2><p>A self-test of this SPA has been completed, and I am delighted to inform you that the script is functioning as expected.<\/p><\/div><\/div><\/section><\/div>');
+				this.relLinksFactory(0, '<a href=\"#!\/hp\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Success!<\/h3><p>Related links work successfully.<\/p><\/div><\/div><\/a>');
+				this.relLinksFactory(1, '<a href=\"#!\/hp\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Success!<\/h3><p>Related links work successfully.<\/p><\/div><\/div><\/a>');
+
+			} else if(this.cd == '#!/faqs') {
+				//
+				// faqs
+
+				this.pageTitle = 'FAQs';
+				this.pageHeadline= 'Frequently asked questions';
+				this.pageBlurb = 'Some of our most-asked questions with regards to the Digital Village services';
+
+				this.breadcrumbFactory('<li class=\"-ccp-breadcrumb-item\"><a href=\"#!\/hp\"><i class=\"fa fa-home fa-fw\"><\/i><\/a><\/li><li class=\"-ccp-breadcrumb-item\">Frequently asked questions<\/li>');
+				this.quickLinksFactory('<li><a href=\"#!\/info\/opening-hours\">Opening hours<\/a><\/li><li><a href=\"#!\/info\/contact-us\">Contact us<\/a><\/li><li><a href=\"#!\/how-tos\/help-with-this-site\">Help with this site<\/a><\/li>');
+				this.pageFactory('<section class=\"-ccp-white-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-x-1 -ccp-inner-t-lg -ccp-inner-b-1\"><h2 class=\"-ccp-heading-u\">Here to help<\/h2><p>The Digital Village team is on-hand to help students orient themselves around the College\'s online and digital facilities. Through a combination of our experience and your questions, here are some of our most-commonly asked questions:<\/p><\/div><\/div><\/section><section class=\"-ccp-white-section\"><div class=\"-ccp-container\"><div class=\"-ccp-inner-x-1 -ccp-inner-t-1 -ccp-inner-b-lg\"><h2 class=\"-ccp-heading-u\">Here to help<\/h2><p>The Digital Village team is on-hand to help students orient themselves around the College\'s online and digital facilities. Through a combination of our experience and your questions, here are some of our most-commonly asked questions:<\/p><\/div><\/div><\/section>');
 				this.relLinksFactory(0, '<a href=\"#!\/hp\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Success!<\/h3><p>Related links work successfully.<\/p><\/div><\/div><\/a>');
 				this.relLinksFactory(1, '<a href=\"#!\/hp\" class=\"-ccp-card-link\"><div class=\"-ccp-card-white\"><div class=\"-ccp-card-inner\"><h3 class=\"-ccp-card-header\">Success!<\/h3><p>Related links work successfully.<\/p><\/div><\/div><\/a>');
 
