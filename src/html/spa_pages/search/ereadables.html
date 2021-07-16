@@ -1,46 +1,34 @@
-<div class="-ccp-ql-wrapper">
-	<div class="-ccp-ql-container">
-		<h4 class="-ccp-heading-u">Related pages</h4>
-		<ul>
-			<li><a href="#!/search">Catalogue search</a></li>
-			<li><a href="#!/search/books">Book search</a></li>
-			<li><a href="#!/search/equipment">Equipment search</a></li>
-		</ul>
+<!-- search box - do not edit -->
+<section class="-ccp-hue1-section">
+	<div class="-ccp-container">
+		<div class="-ccp-inner-lg">
+			<!-- title here -->
+			<h2 class="-ccp-heading-u">Search the catalogue</h2>
+			<!-- DO NOT EDIT BEGIN -->
+			<div class="-ccp-searchform-container">
+				<form class="-ccp-searchform" name="searchform" method="get" action="/cgi-bin/koha/opac-search.pl">
+					<div class="-ccp-searchform-inner">
+						<input type="text" title="Type search term" placeholder="Search for eBooks, journal articles..." class="-ccp-searchform-input" name="q">
+						<button type="submit" class="-ccp-searchform-submit btn btn-default"><i class="fa fa-search fa-fw"></i> Go</button>
+						<input type="hidden" title="IDX" name="idx" value="">
+						<input type="hidden" title="LIMIT" name="limit" value="ccode:EBK">
+					</div>
+				</form>
+			</div>
+			<p><a href="/cgi-bin/koha/opac-search.pl">Advanced search &raquo;</a></p>
+			<!-- DO NOT EDIT END -->
+		</div>
 	</div>
-</div>
-<div id="-ccp-page-region" class="col-md-12" role="main">
-	<!-- search box - do not edit -->
-	<section class="-ccp-hue1-section">
-		<div class="-ccp-container">
-			<div class="-ccp-inner-lg">
-				<!-- title here -->
-				<h2 class="-ccp-heading-u">Search the catalogue</h2>
-				<!-- DO NOT EDIT BEGIN -->
-				<div class="-ccp-searchform-container">
-					<form class="-ccp-searchform" name="searchform" method="get" action="/cgi-bin/koha/opac-search.pl">
-						<div class="-ccp-searchform-inner">
-							<input type="text" title="Type search term" placeholder="Search for eBooks, journal articles..." class="-ccp-searchform-input" name="q">
-							<button type="submit" class="-ccp-searchform-submit btn btn-default"><i class="fa fa-search fa-fw"></i> Go</button>
-							<input type="hidden" title="IDX" name="idx" value="">
-							<input type="hidden" title="LIMIT" name="limit" value="ccode:EBK">
-						</div>
-					</form>
-				</div>
-				<p><a href="/cgi-bin/koha/opac-search.pl">Advanced search &raquo;</a></p>
-				<!-- DO NOT EDIT END -->
-			</div>
+</section>
+<!-- help with this page-->
+<section class="-ccp-cloudy-section">
+	<div class="-ccp-container">
+		<div class="-ccp-inner-lg">
+			<!-- title here-->
+			<h2>Help with this page</h2>
+			<!-- text here -->
+			<p>If you'd like to find an eBook or eJournal with us, please use the search box above and enter key words about the item you'd like to search for. For example, if you would like an eBook on Queen Mary's Scotland, try entering 'scotland queen mary'. </p>
+			<p>If you're looking to refine your search further, you can either use the refinement tools per-search, click 'Advanced search' and limit your searches that way, or, try searching specifically for <a href="#!/search/books">books</a>, <a href="#!/search/equipment">equipment</a>, or, <a href="#!/search">anything on our catalogue</a>.</p>
 		</div>
-	</section>
-	<!-- help with this page-->
-	<section class="-ccp-cloudy-section">
-		<div class="-ccp-container">
-			<div class="-ccp-inner-lg">
-				<!-- title here-->
-				<h2>Help with this page</h2>
-				<!-- text here -->
-				<p>If you'd like to find an eBook or eJournal with us, please use the search box above and enter key words about the item you'd like to search for. For example, if you would like an eBook on Queen Mary's Scotland, try entering 'scotland queen mary'. </p>
-				<p>If you're looking to refine your search further, you can either use the refinement tools per-search, click 'Advanced search' and limit your searches that way, or, try searching specifically for <a href="#!/search/books">books</a>, <a href="#!/search/equipment">equipment</a>, or, <a href="#!/search">anything on our catalogue</a>.</p>
-			</div>
-		</div>
-	</section>
-</div>
+	</div>
+</section>
