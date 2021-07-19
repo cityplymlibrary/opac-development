@@ -325,6 +325,11 @@
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpHue1
 	}
+
+	.-ccp-numeral {
+		background-color: $ccpHue1;
+		color: $ccpBlack
+	}
 }
 
 .-ccp-black-section {
@@ -388,6 +393,11 @@
 
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpHue2
+	}
+
+	.-ccp-numeral {
+		background-color: $ccpHue2;
+		color: $ccpBlack
 	}
 }
 

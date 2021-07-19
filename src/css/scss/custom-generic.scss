@@ -77,12 +77,12 @@ hr {
 .fonts-loaded input, .fonts-loaded optgroup,
 .fonts-loaded option, .fonts-loaded select,
 .fonts-loaded textarea {
-	font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+	font-family: 'Century Gothic', 'CenturyGothic', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 	body, button, input,
 	optgroup, option, select,
 	textarea {
-		font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif
+		font-family: 'Century Gothic', 'CenturyGothic', 'Helvetica Neue', 'Helvetica', sans-serif
 	}
 }
 
@@ -106,7 +106,7 @@ hr {
 .btn, input[type="submit"].btn {
 	background-image: none;
 	text-shadow: none;
-	text-decoration: none!important;
+	text-decoration: none;
 
 	padding: .45rem 1.125rem;
 	font-size: 1rem;
@@ -118,20 +118,20 @@ hr {
 	font-weight: 400;
 	box-shadow: 0 0 0 1px transparent;
 
-	color: $ccpBlack!important;
-	background-color: $ccpWhite!important;
-	border: 1px solid darken($ccpWhite, 33%)!important;
+	color: $ccpBlack;
+	background-color: $ccpWhite;
+	border: 1px solid darken($ccpWhite, 33%);
 
 	&:hover, &:focus,
 	&:active, &.active {
 		background-image: none;
 		text-shadow: none;
-		text-decoration: none!important;
+		text-decoration: none;
 
-		color: $ccpWhite!important;
-		background-color: $msCharcoal!important;
-		border: 1px solid lighten($msCharcoal, 33%)!important;
-		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)!important
+		color: $ccpWhite;
+		background-color: $msCharcoal;
+		border: 1px solid lighten($msCharcoal, 33%);
+		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)
 	}
 }
 
@@ -140,23 +140,23 @@ hr {
 .btn-success, .btn-success:not(:disabled):not(.disabled) {
 	background-image: none;
 	text-shadow: none;
-	text-decoration: none!important;
+	text-decoration: none;
 
-	color: $ccpWhite!important;
-	background-color: $ccpHue3!important;
-	border: 1px solid $ccpText3!important;
+	color: $ccpWhite;
+	background-color: $ccpHue3;
+	border: 1px solid $ccpText3;
 	
 
 	&:hover, &:focus,
 	&:active, &.active {
 		background-image: none;
 		text-shadow: none;
-		text-decoration: none!important;
+		text-decoration: none;
 
-		color: $ccpWhite!important;
-		background-color: $ccpBlack!important;
-		border: 1px solid darken($ccpHue3, 55%)!important;
-		box-shadow: 0 0 0 1px $ccpHue3!important
+		color: $ccpWhite;
+		background-color: $ccpBlack;
+		border: 1px solid darken($ccpHue3, 55%);
+		box-shadow: 0 0 0 1px $ccpHue3
 	}
 }
 
@@ -166,7 +166,7 @@ hr {
 #searchsubmit.btn.btn-primary {
 	background-image: none;
 	text-shadow: none;
-	text-decoration: none!important;
+	text-decoration: none;
 
 	color: $ccpBlack;
 	background-color: $ccpWhite;
@@ -176,12 +176,12 @@ hr {
 	&:active, &.active {
 		background-image: none;
 		text-shadow: none;
-		text-decoration: none!important;
+		text-decoration: none;
 
-		color: $ccpWhite!important;
-		background-color: $msCharcoal!important;
-		border: 1px solid lighten($msCharcoal, 33%)!important;
-		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)!important
+		color: $ccpWhite;
+		background-color: $msCharcoal;
+		border: 1px solid lighten($msCharcoal, 33%);
+		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)
 	}
 }
 
@@ -189,22 +189,22 @@ hr {
 .btn-link:not(:disabled):not(.disabled) {
 	background-image: none;
 	text-shadow: none;
-	text-decoration: none!important;
+	text-decoration: none;
 
-	color: inherit!important;
-	background-color: transparent!important;
-	border: 1px solid transparent!important;
+	color: inherit;
+	background-color: transparent;
+	border: 1px solid transparent;
 
 	&:hover, &:focus,
 	&:active, &.active {
 		background-image: none;
 		text-shadow: none;
-		text-decoration: none!important;
+		text-decoration: none;
 
-		color: inherit!important;
-		background-color: transparent!important;
-		border: 1px solid darken($ccpWhite, 33%)!important;
-		box-shadow: 0 0 0 1px transparent!important
+		color: inherit;
+		background-color: transparent;
+		border: 1px solid darken($ccpWhite, 33%);
+		box-shadow: 0 0 0 1px transparent
 	}
 }
 
@@ -212,23 +212,23 @@ hr {
 .btn-danger:not(:disabled):not(.disabled) {
 	background-image: none;
 	text-shadow: none;
-	text-decoration: none!important;
+	text-decoration: none;
 
-	color: $ccpWhite!important;
-	background-color: $msRed!important;
-	border: 1px solid $ccpWhite!important;
+	color: $ccpWhite;
+	background-color: $msRed;
+	border: 1px solid $ccpWhite;
 	
 
 	&:hover, &:focus,
 	&:active, &.active {
 		background-image: none;
 		text-shadow: none;
-		text-decoration: none!important;
+		text-decoration: none;
 
-		color: $ccpWhite!important;
-		background-color: darken($msRed, 15%)!important;
-		border: 1px solid darken($msRed, 10%)!important;
-		box-shadow: 0 0 0 1px $msRed!important
+		color: $ccpWhite;
+		background-color: darken($msRed, 15%);
+		border: 1px solid darken($msRed, 10%);
+		box-shadow: 0 0 0 1px $msRed
 	}
 }
 
@@ -240,8 +240,8 @@ hr {
 .dropdown-menu > li > a {
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $ccpHue1!important;
-		color: $ccpText1!important
+		background-color: $ccpHue1;
+		color: $ccpText1
 	}
 }
 

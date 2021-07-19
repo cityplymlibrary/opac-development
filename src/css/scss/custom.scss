@@ -11,9 +11,9 @@
 //
 // custom imports
 @import 'custom-generic.scss'; // rules for all elements/regularly used elements
-@import 'custom-nav.scss'; // rules for navbar
-@import 'custom-header.scss'; // rules for header area
 @import 'custom-page.scss'; // rules for page area
 @import 'custom-opac.scss'; // rules for opac overrides
 @import 'custom-credits.scss'; // rules for footer area
+@import 'custom-header.scss'; // rules for header area
+@import 'custom-nav.scss'; // rules for navbar
 @import 'custom-after.scss'; // anything else

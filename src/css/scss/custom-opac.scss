@@ -254,11 +254,11 @@
 // view tabs
 a#Normalview, a#MARCview,
 a#ISBDview {
-	text-decoration: underline!important;
+	text-decoration: underline;
 
 	&:hover, &:focus,
 	&:active, &.active {
-		text-decoration: none!important;
+		text-decoration: none;
 	}
 }
 

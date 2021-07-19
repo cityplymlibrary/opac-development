@@ -78,15 +78,17 @@
 }
 
 .-ccp-site-title {
-	color: $ccpWhite;
+	display: block!important;
+	color: $ccpWhite!important;
 	font-size: 4rem!important;
 	font-weight: normal!important
 }
 
 .-ccp-page-title {
-	color: $ccpWhite;
+	display: block!important;
+	color: $ccpWhite!important;
 	font-size: 1.3125rem!important;
-	font-weight: normal!important
+	font-weight: normal
 }
 
 //
@@ -102,10 +104,10 @@
 	color: $ccpWhite;
 
 	a {
-		color: $ccpWhite!important;
+		color: $ccpWhite;
 
 		&:hover, &:focus {
-			color: darken($ccpWhite, 33%)!important
+			color: darken($ccpWhite, 33%)
 		}
 	}
 
