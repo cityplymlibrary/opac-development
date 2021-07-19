@@ -362,6 +362,11 @@
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpWhite
 	}
+
+	.-ccp-numeral {
+		background-color: $ccpWhite;
+		color: $ccpBlack
+	}
 }
 
 .-ccp-cloudy-section {
@@ -431,6 +436,11 @@
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpWhite
 	}
+
+	.-ccp-numeral {
+		background-color: $ccpWhite;
+		color: $ccpBlack
+	}
 }
 
 .-ccp-danger-section {
@@ -462,6 +472,11 @@
 
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpWhite
+	}
+
+	.-ccp-numeral {
+		background-color: $ccpWhite;
+		color: $msRed
 	}
 }
 
@@ -495,6 +510,11 @@
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpBlack
 	}
+
+	.-ccp-numeral {
+		background-color: $ccpBlack;
+		color: $msGold
+	}
 }
 
 .-ccp-hue1-section {
@@ -526,6 +546,11 @@
 
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpText1
+	}
+
+	.-ccp-numeral {
+		background-color: $ccpText1;
+		color: $ccpHue1
 	}
 }
 
@@ -559,6 +584,11 @@
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpText2
 	}
+
+	.-ccp-numeral {
+		background-color: $ccpText2;
+		color: $ccpHue2
+	}
 }
 
 .-ccp-hue3-section {
@@ -590,6 +620,11 @@
 
 	.-ccp-heading-u::after {
 		border-bottom: .25rem solid $ccpText3
+	}
+
+	.-ccp-numeral {
+		background-color: $ccpText3;
+		color: $ccpHue3
 	}
 }
 
