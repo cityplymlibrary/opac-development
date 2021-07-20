@@ -143,8 +143,9 @@ hr {
 	text-decoration: none;
 
 	color: $ccpWhite;
-	background-color: $ccpHue3;
-	border: 1px solid $ccpText3;
+	background-color: $msCharcoal;
+	border: 1px solid lighten($msCharcoal, 33%);
+	box-shadow: 0 0 0 1px lighten($msCharcoal, 33%);
 	
 
 	&:hover, &:focus,
@@ -153,10 +154,10 @@ hr {
 		text-shadow: none;
 		text-decoration: none;
 
-		color: $ccpWhite;
-		background-color: $ccpBlack;
-		border: 1px solid darken($ccpHue3, 55%);
-		box-shadow: 0 0 0 1px $ccpHue3
+		color: $ccpBlack;
+		background-color: $ccpWhite;
+		border: 1px solid darken($ccpWhite, 33%);
+		box-shadow: 0 0 0 1px transparent
 	}
 }
 
@@ -171,6 +172,7 @@ hr {
 	color: $ccpBlack;
 	background-color: $ccpWhite;
 	border: 1px solid darken($ccpWhite, 33%);
+	box-shadow: 0 0 0 1px transparent;
 
 	&:hover, &:focus,
 	&:active, &.active {
