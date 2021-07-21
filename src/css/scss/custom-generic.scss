@@ -239,23 +239,6 @@ hr {
 	border-radius: .33rem
 }
 
-.dropdown-menu > li > a {
-	&:hover, &:focus,
-	&:active, &.active {
-		background-color: $ccpHue1;
-		color: $ccpText1
-	}
-}
-
-.show {
-	.btn-primary.dropdown-toggle {
-		background-image: none;
-		background-color: $ccpHue2;
-		border-color: $ccpHue2;
-		box-shadow: 0 0 0 1px $ccpHue2
-	}
-}
-
 //
 // input fields
 input[type="text"], input[type="password"],

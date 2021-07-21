@@ -52,6 +52,17 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 			}
 		}
 
+		a.dropdown-item {
+			background-color: $ccpWhite;
+			color: $ccpBlack;
+
+			&:hover, &:focus,
+			&:active, &.active {
+				background-color: $ccpHue2;
+				color: $ccpBlack
+			}
+		}
+
 		&::before {
 			content: none
 		}
@@ -62,38 +73,31 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 	}
 }
 
-#loggedinuser-menu p {
-	a {
-		color: $msRed;
-	
-		&:link, &:visited {
-			color: $msRed
+#loggedinuser-menu {
+	p {
+		a.login-link {
+			color: $ccpBlack;
+
+			&:hover, &:focus,
+			&:active, &.active {
+				color: $ccpHue1
+			}
 		}
-	
+	}
+
+	a#logout.logout {
+		color: $msRed;
+
 		&:hover, &:focus,
 		&:active, &.active {
-			color: darken($msRed, 33%)
+			color: darken($msRed, 15%)
 		}
 	}
 }
 
-#loggedinuser-menu > p:nth-child(2) {
-	display: none
-}
-
-#members {
-	a.logout {
-		color: $msRed;
-		
-		&:link, &:visited {
-			color: $msRed
-		}
-		
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($msRed, 33%)
-		}
-	}
+.dropdown-menu {
+	background-color: $ccpWhite;
+	color: $ccpBlack
 }
 
 .navbar .nav > li {
@@ -106,8 +110,8 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png"] {
 //
 // mobile overrides
 @media only screen and (max-width:1100px) {
-	.sslabel, .helplabel,
-	.feedbacklabel, .listslabel2 {
+	.hlplabel, .fbklabel, .scnlabel,
+	.collabel, .lrslabel, .ssklabel {
 		display: none
 	}
 }
