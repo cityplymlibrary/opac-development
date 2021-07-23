@@ -28,25 +28,25 @@
 
 .-ccp-embed-21by9 {
 	&::before {
-		padding-top: math.div(9, 21)
+		padding-top: math.percentage(math.div(9, 21))
 	}
 }
 
 .-ccp-embed-16by9 {
 	&::before {
-		padding-top: math.div(9, 16)
+		padding-top: math.percentage(math.div(9, 16))
 	}
 }
 
 .-ccp-embed-4by3 {
 	&::before {
-		padding-top: math.div(3, 4)
+		padding-top: math.percentage(math.div(3, 4))
 	}
 }
 
 .-ccp-embed-1by1 {
 	&::before {
-		padding-top: math.div(1, 1)
+		padding-top: math.percentage(math.div(1, 1))
 	}
 }
 

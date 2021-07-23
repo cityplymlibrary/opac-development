@@ -42,6 +42,16 @@
 //
 //
 // search results
+.returntosearch {
+	padding: 0 1rem
+}
+
+@media(min-width: $breakpoint-pc) {
+	.returntosearch {
+		padding: 0
+	}
+}
+
 #numresults, #selections {
 	color: $ccpBlack
 }
@@ -69,7 +79,6 @@
 //
 // search facets
 #facetcontainer {
-	overflow: hidden;
 	border: 1px solid darken($ccpWhite, 33%);
 	border-right-color: transparent;
 	border-radius: .33rem
@@ -101,7 +110,6 @@
 //
 // floating toolbar
 #floating {
-	overflow: hidden;
 	border: 1px solid darken($ccpWhite, 33%);
 	border-radius: .33rem
 }

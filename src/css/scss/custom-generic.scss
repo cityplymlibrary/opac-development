@@ -19,7 +19,7 @@ body::after {
 	height: 0;
 	overflow: hidden;
 	z-index: -1;
-	content: url('//res.cloudinary.com/cityplymjdeery/image/upload/v1626118634/bitmaps/styling/koha-white-logo_ws22zr.png') url('//res.cloudinary.com/cityplymjdeery/image/upload/v1626118634/bitmaps/styling/koha-cloudy-logo_gmcdce.png')
+	content: url('//www.dropbox.com/s/qxg9gmbi0i4nb8p/koha-white-logo.png?raw=1') url('//www.dropbox.com/s/vxqzd6pheukto4m/koha-cloudy-logo.png?raw=1')
 }
 
 //
@@ -89,10 +89,10 @@ hr {
 //
 // main content
 #wrapper {
+	overflow: hidden;
 	width: 100%;
 	margin: auto;
-	padding: 0;
-	overflow-x: hidden
+	padding: 0
 }
 
 .container-fluid {
