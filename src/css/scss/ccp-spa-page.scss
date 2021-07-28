@@ -256,7 +256,8 @@
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: lighten($msCharcoal, 33%)
+				background-color: $ccpHue3;
+				color: $ccpWhite
 			}
 		}
 			
@@ -282,7 +283,8 @@
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: darken($ccpWhite, 33%)
+				background-color: $ccpHue1;
+				color: $ccpBlack
 			}
 		}
 
@@ -307,11 +309,6 @@
 
 		&:visited {
 			color: $ccpBlack
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($msCharcoal, 33%)
 		}
 	}
 		
@@ -345,11 +342,6 @@
 		&:visited {
 			color: $ccpWhite
 		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($ccpWhite, 33%)
-		}
 	}
 		
 	h1, h2, h3,
@@ -381,11 +373,6 @@
 
 		&:visited {
 			color: $ccpBlack
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($msCharcoal, 33%)
 		}
 	}
 		
@@ -419,11 +406,6 @@
 		&:visited {
 			color: $ccpWhite
 		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($ccpWhite, 33%)
-		}
 	}
 	
 	h1, h2, h3,
@@ -455,11 +437,6 @@
 
 		&:visited {
 			color: $ccpWhite
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($ccpWhite, 33%)
 		}
 	}
 		
@@ -493,11 +470,6 @@
 		&:visited {
 			color: $ccpBlack
 		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($msCharcoal, 33%)
-		}
 	}
 		
 	h1, h2, h3,
@@ -529,11 +501,6 @@
 
 		&:visited {
 			color: $ccpText1
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: lighten($ccpText1, 15%)
 		}
 	}
 		
@@ -567,11 +534,6 @@
 		&:visited {
 			color: $ccpText2
 		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: lighten($ccpText2, 15%)
-		}
 	}
 	
 	h1, h2, h3,
@@ -603,11 +565,6 @@
 
 		&:visited {
 			color: $ccpText3
-		}
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: darken($ccpText3, 15%)
 		}
 	}
 	
@@ -912,12 +869,7 @@
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpBlack;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $msRed
-		}
+		color: $ccpBlack
 	}
 		
 	h1, h2, h3,
@@ -946,11 +898,6 @@
 		
 	a, .ccp-card-link {
 		color: $ccpBlack;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $msRed
-		}
 	}
 		
 	h1, h2, h3,
@@ -979,11 +926,6 @@
 		
 	a, .ccp-card-link {
 		color: $ccpWhite;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $ccpWhite
-		}
 	}
 		
 	h1, h2, h3,
@@ -1012,11 +954,6 @@
 		
 	a, .ccp-card-link {
 		color: $ccpWhite;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $ccpWhite
-		}
 	}
 		
 	h1, h2, h3,
@@ -1045,11 +982,6 @@
 		
 	a, .ccp-card-link {
 		color: $ccpText1;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $ccpWhite
-		}
 	}
 
 	h1, h2, h3,
@@ -1078,11 +1010,6 @@
 		
 	a, .ccp-card-link {
 		color: $ccpText2;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $msCharcoal
-		}
 	}
 
 	h1, h2, h3,
@@ -1110,12 +1037,7 @@
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpText1;
-
-		&:hover, &:focus,
-		&:active, &.active {
-			color: $msCharcoal
-		}
+		color: $ccpText1
 	}
 
 	h1, h2, h3,

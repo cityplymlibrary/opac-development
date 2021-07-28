@@ -1,14 +1,14 @@
 // sco user js, jake deery on behalf of city college plymouth, 2021
 document.addEventListener("DOMContentLoaded", function(event) { 
 	// engineer the page
-	$('.navbar-inverse').remove(); // remove
+	$('#header-region').html('<nav class=\"navbar navbar-expand\"><h1 id=\"logo\"><sapn class=\"navbar-brand\"><\/sapn><\/h1><ul id=\"members\" class=\"navbar-nav\"><li class=\"nav-item dropdown\"><a href=\"\/cgi-bin\/koha\/sco\/help.pl\" class=\"nav-link\"><i class=\"fa fa-info-circle fa-icon-black fa-fw\" aria-hidden=\"true\"><\/i> <span class=\"userlabel\">Help<\/span><\/a><\/li><\/ul><\/nav>'); // set nav
 
 	// finish the details
 	$('#masthead').find('h1').text('Library Self-service systems'); // set title
 
 	// set alert
-	if($('#patronid').length) $('#scomainuserblock').html('<div class=\"alert\">Welcome! Please scan your student ID card to begin. For additional help, please click or tap \'Help\' in the top right-hand corner of the screen.<br \/>If you need additional help, please <a href=\"\/cgi-bin\/koha\/sco\/help.pl\">click here<\/a> for instructions.<\/div>');
-	else if($('#barcode').length) $('#scomainuserblock').html('<div class=\"alert\">Please now scan the barcode on the first page of your book(s) to check them out, renew them, or return them.<br \/>If you need additional help, please <a href=\"\/cgi-bin\/koha\/sco\/help.pl\">click here<\/a> for instructions.<\/div>');
+	if($('#patronid').length) $('#scomainuserblock').html('<div class=\"alert alert-warning\">Welcome! Please scan your student ID card to begin. For additional help, please click or tap \'Help\' in the top right-hand corner of the screen.<br \/>If you need additional help, please <a href=\"\/cgi-bin\/koha\/sco\/help.pl\">click here<\/a> for instructions.<\/div>');
+	else if($('#barcode').length) $('#scomainuserblock').html('<div class=\"alert alert-warning\">Please now scan the barcode on the first page of your book(s) to check them out, renew them, or return them.<br \/>If you need additional help, please <a href=\"\/cgi-bin\/koha\/sco\/help.pl\">click here<\/a> for instructions.<\/div>');
 
 	// prep for use
 	$('html').addClass('fonts-loaded'); // 'load' fonts

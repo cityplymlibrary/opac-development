@@ -64,8 +64,9 @@
 	ul li a {
 		color: $ccpText2;
 
-		&:hover, &:focus {
-			color: lighten($ccpText2, 15%);
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $ccpWhite
 		}
 	}
 }
@@ -106,8 +107,10 @@
 	a {
 		color: $ccpWhite;
 
-		&:hover, &:focus {
-			color: darken($ccpWhite, 33%)
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msGold;
+			color: $ccpBlack
 		}
 	}
 

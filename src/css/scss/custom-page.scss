@@ -151,7 +151,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			background-color: $msRed;
+			background-color: $msBlue;
 			color: $ccpWhite
 		}
 	}
@@ -160,7 +160,7 @@
 #menu li.active a {
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $msRed;
+		background-color: $msBlue;
 		color: $ccpWhite
 	}
 }
