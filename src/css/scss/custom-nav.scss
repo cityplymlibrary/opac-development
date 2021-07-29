@@ -14,6 +14,13 @@
 		background: transparent url('//www.dropbox.com/s/vxqzd6pheukto4m/koha-cloudy-logo.png?raw=1') no-repeat left center
 	}
 
+	a {
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: transparent
+		}
+	}
+
 	@media(min-width: $breakpoint-pc) {
 		display: initial;
 	}
@@ -26,7 +33,7 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png?raw=1"] {
 //
 // navbar
 .navbar-expand {
-	background-color: $ccpBlack;
+	background-color: $msBlack;
 	padding: .5rem 1rem;
 	border: none
 }
@@ -34,32 +41,33 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png?raw=1"] {
 #cart-list-nav, #members {
 	li {
 		a {
-			color: lighten($ccpBlack, 85%);
+			color: lighten($msBlack, 85%);
 			text-decoration: none;
 			text-shadow: none;
 
 			i.fa {
-				color: lighten($ccpBlack, 85%)
+				color: lighten($msBlack, 85%)
 			}
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: lighten($ccpBlack, 55%);
+				background-color: $ccpHue1;
+				color: $ccpText1;
 
 				i.fa {
-					color: lighten($ccpBlack, 55%)
+					color: $ccpText1
 				}
 			}
 		}
 
 		a.dropdown-item {
-			background-color: $ccpWhite;
-			color: $ccpBlack;
+			background-color: $msWhite;
+			color: $msBlack;
 
 			&:hover, &:focus,
 			&:active, &.active {
 				background-color: $ccpHue2;
-				color: $ccpBlack
+				color: $msBlack
 			}
 		}
 
@@ -81,11 +89,11 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png?raw=1"] {
 #loggedinuser-menu {
 	p {
 		a.login-link {
-			color: $ccpBlack;
+			color: $msBlack;
 
 			&:hover, &:focus,
 			&:active, &.active {
-				color: $ccpHue1
+				color: $msWhite
 			}
 		}
 	}
@@ -101,8 +109,8 @@ img[src="/opac-tmpl/bootstrap/images/koha-green-logo.png?raw=1"] {
 }
 
 .dropdown-menu {
-	background-color: $ccpWhite;
-	color: $ccpBlack
+	background-color: $msWhite;
+	color: $msBlack
 }
 
 .navbar .nav > li {

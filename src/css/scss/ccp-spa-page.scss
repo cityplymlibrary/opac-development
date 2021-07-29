@@ -244,20 +244,20 @@
 
 	.-ccp-light {
 		p, span, div, pre, code, strong, em, li {
-			color: $ccpBlack
+			color: $msBlack
 		}
 			
 		a {
-			color: $ccpBlack;
+			color: $msBlack;
 
 			&:visited {
-				color: $ccpBlack
+				color: $msBlack
 			}
 
 			&:hover, &:focus,
 			&:active, &.active {
 				background-color: $ccpHue3;
-				color: $ccpWhite
+				color: $ccpText3
 			}
 		}
 			
@@ -265,26 +265,26 @@
 		h4, h5, h6,
 		.h1, .h2, .h3,
 		.h4, .h5, .h6 {
-			color: $ccpBlack
+			color: $msBlack
 		}
 	}
 
 	.-ccp-dark {
 		p, span, div, pre, code, strong, em, li {
-			color: $ccpWhite
+			color: $msWhite
 		}
 			
 		a {
-			color: $ccpWhite;
+			color: $msWhite;
 
 			&:visited {
-				color: $ccpWhite
+				color: $msWhite
 			}
 
 			&:hover, &:focus,
 			&:active, &.active {
 				background-color: $ccpHue1;
-				color: $ccpBlack
+				color: $ccpText1
 			}
 		}
 
@@ -292,7 +292,7 @@
 		h4, h5, h6,
 		.h1, .h2, .h3,
 		.h4, .h5, .h6 {
-			color: $ccpWhite
+			color: $msWhite
 		}
 	}
 }
@@ -301,14 +301,20 @@
 	background-color: $white;
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpBlack
+		color: $msBlack
 	}
 		
 	a {
-		color: $ccpBlack;
+		color: $msBlack;
 
 		&:visited {
-			color: $ccpBlack
+			color: $msBlack
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msBlack;
+			color: $msWhite
 		}
 	}
 		
@@ -316,7 +322,7 @@
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpBlack
+		color: $msBlack
 	}
 
 	.-ccp-heading-u::after {
@@ -325,22 +331,28 @@
 
 	.-ccp-numeral {
 		background-color: $ccpHue1;
-		color: $ccpBlack
+		color: $msBlack
 	}
 }
 
 .-ccp-black-section {
-	background-color: $ccpBlack;
+	background-color: $black;
 	
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpWhite
+		color: $msWhite
 	}
 		
 	a {
-		color: $ccpWhite;
+		color: $msWhite;
 
 		&:visited {
-			color: $ccpWhite
+			color: $msWhite
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msWhite;
+			color: $msBlack
 		}
 	}
 		
@@ -348,31 +360,37 @@
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpWhite
+		color: $msWhite
 	}
 
 	.-ccp-heading-u::after {
-		border-bottom: .25rem solid $ccpWhite
+		border-bottom: .25rem solid $msWhite
 	}
 
 	.-ccp-numeral {
-		background-color: $ccpWhite;
-		color: $ccpBlack
+		background-color: $msWhite;
+		color: $msBlack
 	}
 }
 
 .-ccp-cloudy-section {
-	background-color: $ccpWhite;
+	background-color: $msWhite;
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpBlack
+		color: $msBlack
 	}
 		
 	a {
-		color: $ccpBlack;
+		color: $msBlack;
 
 		&:visited {
-			color: $ccpBlack
+			color: $msBlack
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msBlack;
+			color: $msWhite
 		}
 	}
 		
@@ -380,7 +398,7 @@
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpBlack
+		color: $msBlack
 	}
 
 	.-ccp-heading-u::after {
@@ -389,7 +407,7 @@
 
 	.-ccp-numeral {
 		background-color: $ccpHue2;
-		color: $ccpBlack
+		color: $msBlack
 	}
 }
 
@@ -397,14 +415,20 @@
 	background-color: $msCharcoal;
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpWhite
+		color: $msWhite
 	}
 	
 	a {
-		color: $ccpWhite;
+		color: $msWhite;
 
 		&:visited {
-			color: $ccpWhite
+			color: $msWhite
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msWhite;
+			color: $msBlack
 		}
 	}
 	
@@ -412,16 +436,16 @@
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpWhite
+		color: $msWhite
 	}
 
 	.-ccp-heading-u::after {
-		border-bottom: .25rem solid $ccpWhite
+		border-bottom: .25rem solid $msWhite
 	}
 
 	.-ccp-numeral {
-		background-color: $ccpWhite;
-		color: $ccpBlack
+		background-color: $msWhite;
+		color: $msBlack
 	}
 }
 
@@ -429,14 +453,20 @@
 	background-color: $msRed;
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpWhite
+		color: $msWhite
 	}
 		
 	a {
-		color: $ccpWhite;
+		color: $msWhite;
 
 		&:visited {
-			color: $ccpWhite
+			color: $msWhite
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msCharcoal;
+			color: $msCloudy
 		}
 	}
 		
@@ -444,15 +474,15 @@
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpWhite
+		color: $msWhite
 	}
 
 	.-ccp-heading-u::after {
-		border-bottom: .25rem solid $ccpWhite
+		border-bottom: .25rem solid $msWhite
 	}
 
 	.-ccp-numeral {
-		background-color: $ccpWhite;
+		background-color: $msWhite;
 		color: $msRed
 	}
 }
@@ -461,14 +491,20 @@
 	background-color: $msGold;
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpBlack
+		color: $msBlack
 	}
 		
 	a {
-		color: $ccpBlack;
+		color: $msBlack;
 
 		&:visited {
-			color: $ccpBlack
+			color: $msBlack
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $msBlack;
+			color: $msCloudy
 		}
 	}
 		
@@ -476,15 +512,15 @@
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpBlack
+		color: $msBlack
 	}
 
 	.-ccp-heading-u::after {
-		border-bottom: .25rem solid $ccpBlack
+		border-bottom: .25rem solid $msBlack
 	}
 
 	.-ccp-numeral {
-		background-color: $ccpBlack;
+		background-color: $msBlack;
 		color: $msGold
 	}
 }
@@ -501,6 +537,12 @@
 
 		&:visited {
 			color: $ccpText1
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: darken($ccpHue1, 33%);
+			color: darken($ccpText1, 33%)
 		}
 	}
 		
@@ -534,6 +576,12 @@
 		&:visited {
 			color: $ccpText2
 		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $ccpText2;
+			color: $ccpHue2
+		}
 	}
 	
 	h1, h2, h3,
@@ -565,6 +613,12 @@
 
 		&:visited {
 			color: $ccpText3
+		}
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $ccpText3;
+			color: $ccpHue3
 		}
 	}
 	
@@ -861,59 +915,59 @@
 
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $ccpWhite
+		background-color: $msWhite
 	}
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpBlack
+		color: $msBlack
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpBlack
+		color: $msBlack
 	}
 		
 	h1, h2, h3,
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpBlack
+		color: $msBlack
 	}
 
 	&::after {
-		color: $ccpBlack
+		color: $msBlack
 	}
 }
 
 .-ccp-card-cloudy {
-	background-color: $ccpWhite;
+	background-color: $msWhite;
 
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $ccpWhite
+		background-color: $white
 	}
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpBlack
+		color: $msBlack
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpBlack;
+		color: $msBlack;
 	}
 		
 	h1, h2, h3,
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpBlack
+		color: $msBlack
 	}
 
 	&::after {
-		color: $ccpBlack
+		color: $msBlack
 	}
 }
 
 .-ccp-card-black {
-	background-color: $ccpBlack;
+	background-color: $msBlack;
 
 	&:hover, &:focus,
 	&:active, &.active {
@@ -921,22 +975,22 @@
 	}
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpWhite
+		color: $msWhite
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpWhite;
+		color: $msWhite;
 	}
 		
 	h1, h2, h3,
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpWhite
+		color: $msWhite
 	}
 
 	&::after {
-		color: $ccpWhite
+		color: $msWhite
 	}
 }
 
@@ -945,26 +999,26 @@
 
 	&:hover, &:focus,
 	&:active, &.active {
-		background-color: $ccpBlack
+		background-color: $msBlack
 	}
 
 	p, span, div, pre, code, strong, em, li {
-		color: $ccpWhite
+		color: $msWhite
 	}
 		
 	a, .ccp-card-link {
-		color: $ccpWhite;
+		color: $msWhite;
 	}
 		
 	h1, h2, h3,
 	h4, h5, h6,
 	.h1, .h2, .h3,
 	.h4, .h5, .h6 {
-		color: $ccpWhite
+		color: $msWhite
 	}
 
 	&::after {
-		color: $ccpWhite
+		color: $msWhite
 	}
 }
 

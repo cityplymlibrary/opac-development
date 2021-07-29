@@ -58,7 +58,13 @@
 	}
 
 	a {
-		padding: 1rem
+		padding: 1rem;
+
+		&:hover, &:focus,
+		&:active, &.active {
+			background-color: $ccpText2;
+			color: $ccpHue2
+		}
 	}
 
 	button {

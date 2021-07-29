@@ -9,8 +9,8 @@ html {
 }
 
 body {
-	color: $ccpBlack;
-	background-color: $ccpWhite
+	color: $msBlack;
+	background-color: $white
 }
 
 body::after {
@@ -27,14 +27,14 @@ body::after {
 p {
 	padding: 0 0 .75em;
 	margin: 0;
-	color: $ccpBlack
+	color: $msBlack
 }
 
 h1, h2, h3,
 h4, h5, h6,
 .h1, .h2, .h3,
 .h4, .h5, .h6 {
-	color: $ccpBlack
+	color: $msBlack
 }
 
 a {
@@ -51,13 +51,13 @@ a {
 	&:hover, &:focus,
 	&:active, &.active {
 		background-color: $msBlue;
-		color: $ccpWhite;
+		color: $msWhite;
 		text-decoration: none
 	}
 }
 
 label {
-	color: $ccpBlack
+	color: $msBlack
 }
 
 ul {
@@ -71,7 +71,7 @@ ul li::before {
 }
 
 hr {
-	border-top: 1px solid darken($ccpWhite, 33%)
+	border-top: 1px solid darken($msWhite, 33%)
 }
 
 //
@@ -121,9 +121,9 @@ hr {
 	font-weight: 400;
 	box-shadow: 0 0 0 1px transparent;
 
-	color: $ccpBlack;
-	background-color: $ccpWhite;
-	border: 1px solid darken($ccpWhite, 33%);
+	color: $msBlack;
+	background-color: $msWhite;
+	border: 1px solid darken($msWhite, 33%);
 
 	&:hover, &:focus,
 	&:active, &.active {
@@ -131,7 +131,7 @@ hr {
 		text-shadow: none;
 		text-decoration: none;
 
-		color: $ccpWhite;
+		color: $msWhite;
 		background-color: $msCharcoal;
 		border: 1px solid lighten($msCharcoal, 33%);
 		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)
@@ -145,7 +145,7 @@ hr {
 	text-shadow: none;
 	text-decoration: none;
 
-	color: $ccpWhite;
+	color: $msWhite;
 	background-color: $msCharcoal;
 	border: 1px solid lighten($msCharcoal, 33%);
 	box-shadow: 0 0 0 1px lighten($msCharcoal, 33%);
@@ -157,9 +157,9 @@ hr {
 		text-shadow: none;
 		text-decoration: none;
 
-		color: $ccpBlack;
-		background-color: $ccpWhite;
-		border: 1px solid darken($ccpWhite, 33%);
+		color: $msBlack;
+		background-color: $msWhite;
+		border: 1px solid darken($msWhite, 33%);
 		box-shadow: 0 0 0 1px transparent
 	}
 }
@@ -172,9 +172,9 @@ hr {
 	text-shadow: none;
 	text-decoration: none;
 
-	color: $ccpBlack;
-	background-color: $ccpWhite;
-	border: 1px solid darken($ccpWhite, 33%);
+	color: $msBlack;
+	background-color: $msWhite;
+	border: 1px solid darken($msWhite, 33%);
 	box-shadow: 0 0 0 1px transparent;
 
 	&:hover, &:focus,
@@ -183,7 +183,7 @@ hr {
 		text-shadow: none;
 		text-decoration: none;
 
-		color: $ccpWhite;
+		color: $msWhite;
 		background-color: $msCharcoal;
 		border: 1px solid lighten($msCharcoal, 33%);
 		box-shadow: 0 0 0 1px lighten($msCharcoal, 33%)
@@ -208,7 +208,7 @@ hr {
 
 		color: inherit;
 		background-color: transparent;
-		border: 1px solid darken($ccpWhite, 33%);
+		border: 1px solid darken($msWhite, 33%);
 		box-shadow: 0 0 0 1px transparent
 	}
 }
@@ -219,9 +219,9 @@ hr {
 	text-shadow: none;
 	text-decoration: none;
 
-	color: $ccpWhite;
+	color: $msWhite;
 	background-color: $msRed;
-	border: 1px solid $ccpWhite;
+	border: 1px solid $msWhite;
 	
 
 	&:hover, &:focus,
@@ -230,7 +230,7 @@ hr {
 		text-shadow: none;
 		text-decoration: none;
 
-		color: $ccpWhite;
+		color: $msWhite;
 		background-color: darken($msRed, 15%);
 		border: 1px solid darken($msRed, 10%);
 		box-shadow: 0 0 0 1px $msRed
@@ -259,7 +259,7 @@ input[type="search"], select, textarea,
 	line-height: normal;
 	background-image: none;
 	text-shadow: none;
-	border: 1px solid darken($ccpWhite, 33%);
+	border: 1px solid darken($msWhite, 33%);
 	box-shadow: none;
 	border-radius: .33rem;
 
@@ -268,7 +268,7 @@ input[type="search"], select, textarea,
 		background-image: none;
 		text-shadow: none;
 		
-		border: 1px solid $ccpWhite, 66%;
+		border: 1px solid $msWhite, 66%;
 		box-shadow: 0 0 0 1px darken($ccpHue2, 33%)
 	}
 

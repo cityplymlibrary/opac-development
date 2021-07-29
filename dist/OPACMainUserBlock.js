@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			//
 			// local vars
 			var headerPre = '<div id=\"-ccp-header-region\">';
-			var header = '<section class=\"-ccp-transparent-section\"><div class=\"-ccp-container\"><img class=\"-ccp-logo\" src=\"https:\/\/www.dropbox.com\/s\/ew8ktssh0j64d5c\/ccp-logo.png?raw=1\"><div class=\"-ccp-inner-md\"><div class=\"-ccp-breadcrumb-container\"><ul id=\"-ccp-breadcrumb-region\" class=\"-ccp-breadcrumb-inner\">Loading . . . <\/ul><\/div><h1 class=\"-ccp-site-title\"><\/h1><h1 class=\"-ccp-page-title -ccp-heading-u\"><\/h1><\/div><\/div><\/section>';
+			var header = '<section class=\"-ccp-transparent-section\"><div class=\"-ccp-dark\"><div class=\"-ccp-container\"><img class=\"-ccp-logo\" src=\"https:\/\/www.dropbox.com\/s\/ew8ktssh0j64d5c\/ccp-logo.png?raw=1\"><div class=\"-ccp-inner-md\"><div class=\"-ccp-breadcrumb-container\"><ul id=\"-ccp-breadcrumb-region\" class=\"-ccp-breadcrumb-inner\">Loading . . . <\/ul><\/div><h1 class=\"-ccp-site-title\"><\/h1><h1 class=\"-ccp-page-title -ccp-heading-u\"><\/h1><\/div><\/div><\/div><\/section>';
 			var headerPost = '<\/div>';
 
 			var bodyPre = '<div id=\"-ccp-page-region\" class=\"col-md-12\" role=\"main\">';

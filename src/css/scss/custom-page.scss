@@ -16,7 +16,7 @@
 // breadcrumbs
 .breadcrumb {
 	margin: .5rem 0 .9375rem;
-	background-color: $ccpWhite;
+	background-color: $msWhite;
 	border: 1px solid transparent;
 	border-radius: .33rem
 }
@@ -42,31 +42,50 @@
 		content: none
 	}
 
-	background: $ccpWhite;
-	border-color: darken($ccpWhite, 33%);
+	background: $msWhite;
+	border-color: darken($msWhite, 33%);
 	border-radius: .33rem .33rem 0 0;
 
 	&.ui-tabs-active {
-		border-color: darken($ccpWhite, 33%);
+		border-color: darken($msWhite, 33%);
 		border-radius: .33rem .33rem 0 0
 	}
 }
 
 .ui-tabs .ui-tabs-panel {
-	border-color: darken($ccpWhite, 33%);
+	border-color: darken($msWhite, 33%);
 	border-radius: .33rem
 }
 
 .ui-widget-content, .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	a {
-		color: $ccpBlack
+		background-color: transparent;
+		color: $msBlack;
+
+		&:link, &:visited {
+			background-color: transparent;
+			color: $msBlack
+		}
+
+		&:hover {
+			background-color: transparent;
+			color: $msBlack
+		}
 	}
 }
 
 .ui-widget-content, .ui-tabs .ui-state-default {
-	a, a:link,
-	a:visited {
-		color: $msRed
+	a {
+		color: $msBlue;
+
+		&:link, &:visited {
+			color: $msBlue
+		}
+
+		&:hover {
+			background-color: $msBlue;
+			color: $msWhite
+		}
 	}
 }
 
@@ -79,39 +98,39 @@
 
 .table-bordered, .table-bordered td,
 .table-bordered th {
-	border: 1px solid lighten($ccpBlack, 33%)
+	border: 1px solid lighten($msBlack, 33%)
 }
 
 .table thead th {
-	background-color: darken($ccpWhite, 5%);
-	border-bottom: 1px solid lighten($ccpBlack, 33%)
+	background-color: darken($msWhite, 5%);
+	border-bottom: 1px solid lighten($msBlack, 33%)
 }
 
 .table tbody tr {
-	background-color: $ccpWhite
+	background-color: $white
 }
 
 .table .sorting {
-	background: url('/opac-tmpl/bootstrap/images/ascdesc.gif') no-repeat scroll 100% 75% $ccpWhite
+	background: url('/opac-tmpl/bootstrap/images/ascdesc.gif') no-repeat scroll 100% 75% $msWhite
 }
 
 .table .sorting_asc {
-	background: url('/opac-tmpl/bootstrap/images/asc.gif') no-repeat scroll 100% 80% $ccpWhite
+	background: url('/opac-tmpl/bootstrap/images/asc.gif') no-repeat scroll 100% 80% $msWhite
 }
 
 .table .sorting_desc {
-	background: url('/opac-tmpl/bootstrap/images/desc.gif') no-repeat scroll 100% 80% $ccpWhite
+	background: url('/opac-tmpl/bootstrap/images/desc.gif') no-repeat scroll 100% 80% $msWhite
 }
 
 .table .nosort, .table .nosort.sorting,
 .table .nosort.sorting_asc, .table .nosort.sorting_desc {
-	background-color: $ccpWhite
+	background-color: $msWhite
 }
 
 // striped
 .table-striped tbody > tr > td,
 .table-striped tbody > tr > th {
-	background-color: $ccpWhite
+	background-color: $msWhite
 }
 
 .table-striped tbody > tr:nth-child(2n+1) > td,
@@ -129,7 +148,7 @@
 //
 // menus
 .menu-collapse {
-	border-right: 1px solid darken($ccpWhite, 33%);
+	border-right: 1px solid darken($msWhite, 33%);
 
 	li {
 		&::before {
@@ -144,15 +163,15 @@
 	}
 
 	a {
-		background-color: $ccpWhite;
+		background-color: $msWhite;
 		border-radius: .33rem 0 0 .33rem;
-		border: 1px solid darken($ccpWhite, 33%);
+		border: 1px solid darken($msWhite, 33%);
 		border-right: 1px solid transparent;
 
 		&:hover, &:focus,
 		&:active, &.active {
 			background-color: $msBlue;
-			color: $ccpWhite
+			color: $msWhite
 		}
 	}
 }
@@ -161,14 +180,14 @@
 	&:hover, &:focus,
 	&:active, &.active {
 		background-color: $msBlue;
-		color: $ccpWhite
+		color: $msWhite
 	}
 }
 
 //
 // recolour things
 legend, .legend {
-	color: $ccpBlack;
+	color: $msBlack;
 	border-bottom: none
 }
 
@@ -176,14 +195,14 @@ legend::after, .legend::after {
 	content: '';
 	display: block;
 	max-width: 33%;
-	border-bottom: .25rem solid darken($ccpWhite, 33%);
+	border-bottom: .25rem solid darken($msWhite, 33%);
 	border-radius: .33rem
 }
 
 .results_summary {
-	color: $ccpBlack
+	color: $msBlack
 }
 
 caption, h5 {
-	color: $ccpBlack
+	color: $msBlack
 }

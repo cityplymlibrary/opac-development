@@ -36,7 +36,7 @@
 // adv search
 #advsearch_limits label, #subtypes label,
 .hint {
-	color: $ccpBlack
+	color: $msBlack
 }
 
 //
@@ -53,7 +53,7 @@
 }
 
 #numresults, #selections {
-	color: $ccpBlack
+	color: $msBlack
 }
 
 .shelves {
@@ -79,7 +79,7 @@
 //
 // search facets
 #facetcontainer {
-	border: 1px solid darken($ccpWhite, 33%);
+	border: 1px solid darken($msWhite, 33%);
 	border-right-color: transparent;
 	border-radius: .33rem
 }
@@ -93,37 +93,37 @@
 	margin: 0;
 
 	a {
-		background-color: $ccpWhite;
-		color: $ccpBlack;
+		background-color: $msWhite;
+		color: $msBlack;
 		text-decoration: none;
-		border-bottom: 1px solid darken($ccpWhite, 33%);
-		border-right: 1px solid darken($ccpWhite, 33%)
+		border-bottom: 1px solid darken($msWhite, 33%);
+		border-right: 1px solid darken($msWhite, 33%)
 	}
 }
 
 //
 // bookbag form
 #bookbag_form {
-	border-bottom: 1px solid darken($ccpWhite, 33%)
+	border-bottom: 1px solid darken($msWhite, 33%)
 }
 
 //
 // floating toolbar
 #floating {
-	border: 1px solid darken($ccpWhite, 33%);
+	border: 1px solid darken($msWhite, 33%);
 	border-radius: .33rem
 }
 
 #toolbar.toolbar,
 #toolbar.toolbar.clearfix {
-	background: $ccpWhite;
+	background: $msWhite;
 	border: 1px solid transparent;
-	border-bottom: 1px solid darken($ccpWhite, 33%)
+	border-bottom: 1px solid darken($msWhite, 33%)
 }
 
 #selections-toolbar,
 .selections-toolbar {
-	background: $ccpWhite;
+	background: $msWhite;
 	border: 1px solid transparent
 }
 
@@ -157,8 +157,8 @@
 //
 // suggestions box
 .suggestion {
-	background-color: $ccpWhite;
-	color: $ccpBlack;
+	background-color: $msWhite;
+	color: $msBlack;
 	border: 1px solid transparent;
 	border-radius: .33rem
 }
@@ -172,10 +172,10 @@
 
 #action, .actions,
 .toolbar, .view{
-	color: $ccpBlack;
+	color: $msBlack;
 
 	i.fa {
-		color: $ccpBlack
+		color: $msBlack
 	}
 
 	a {
@@ -196,7 +196,7 @@
 }
 
 #action {
-	background-color: $ccpWhite;
+	background-color: $msWhite;
 	border-color: transparent;
 	border-radius: .33rem;
 
@@ -228,21 +228,21 @@
 //
 // views
 #views {
-	border-bottom: 1px solid darken($ccpWhite, 33%)
+	border-bottom: 1px solid darken($msWhite, 33%)
 }
 
 .view {
-	color: $ccpBlack;
+	color: $msBlack;
 
-	border-top: 1px solid darken($ccpWhite, 33%);
-	border-right: 1px solid darken($ccpWhite, 33%);
+	border-top: 1px solid darken($msWhite, 33%);
+	border-right: 1px solid darken($msWhite, 33%);
 	border-bottom: none;
-	border-left: 1px solid darken($ccpWhite, 33%);
+	border-left: 1px solid darken($msWhite, 33%);
 	border-radius: .33rem .33rem 0 0
 }
 
 .current-view {
-	background-color: $ccpWhite
+	background-color: $msWhite
 }
 
 //
@@ -253,7 +253,7 @@
 
 		&:hover, &:focus,
 		&:active, &.active {
-			border-color: darken($ccpWhite, 33%)
+			border-color: darken($msWhite, 33%)
 		}
 	}
 }
@@ -284,6 +284,23 @@ a#ISBDview {
 .pg_menu li {
 	&::before {
 		content: none
+	}
+}
+
+.pg_menu .pg_link a,
+.pg_menu .pg_link span {
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $msBlue;
+		color: $msWhite
+	}
+}
+
+#a_listResults {
+	&:hover, &:focus,
+	&:active, &.active {
+		background-color: $msBlue;
+		color: $msWhite
 	}
 }
 
